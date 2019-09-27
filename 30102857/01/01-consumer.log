@@ -1,0 +1,22 @@
+npm run consumer
+
+> kafka-local@1.0.0 consumer /opt/sub
+> node src/consumer.js
+
+(node:21336) [SEQUELIZE0002] DeprecationWarning: The logging-option should be either a function or false. Default: console.log
+(node:21336) [SEQUELIZE0004] DeprecationWarning: A boolean value was passed to options.operatorsAliases. This is a no-op with v5 and should be removed.
+connected to local kafka server on port 9092 ...
+Executing (default): SELECT 1+1 AS result
+Connection has been established successfully.
+Executing (default): CREATE TABLE IF NOT EXISTS "Producer_log" ("SEQ_ID"  SERIAL , "TOPICNAME" VARCHAR(255) NOT NULL, "SOURCE" VARCHAR(255) NOT NULL, "SCHEMA_NAME" VARCHAR(255) NOT NULL, "TABLE_NAME" VARCHAR(255) NOT NULL, "PRODUCER_PAYLOAD" JSON NOT NULL, "OPERATION" VARCHAR(255) NOT NULL, PRIMARY KEY ("SEQ_ID"));
+Executing (default): SELECT i.relname AS name, ix.indisprimary AS primary, ix.indisunique AS unique, ix.indkey AS indkey, array_agg(a.attnum) as column_indexes, array_agg(a.attname) AS column_names, pg_get_indexdef(ix.indexrelid) AS definition FROM pg_class t, pg_class i, pg_index ix, pg_attribute a WHERE t.oid = ix.indrelid AND i.oid = ix.indexrelid AND a.attrelid = t.oid AND t.relkind = 'r' and t.relname = 'Producer_log' GROUP BY i.relname, ix.indexrelid, ix.indisprimary, ix.indisunique, ix.indkey ORDER BY i.relname;
+Executing (default): CREATE TABLE IF NOT EXISTS "audit_log" ("SEQ_ID" INTEGER  REFERENCES "Producer_log" ("SEQ_ID") ON DELETE NO ACTION ON UPDATE CASCADE, "PRODUCER_PUBLISH_STATUS" VARCHAR(255), "PRODUCER_FAILURE_LOG" JSON, "PRODUCER_PUBLISH_TIME" TIMESTAMP WITH TIME ZONE, "CONSUMER_DEPLOY_STATUS" VARCHAR(255), "CONSUMER_FAILURE_LOG" JSON, "CONSUMER_UPDATE_TIME" TIMESTAMP WITH TIME ZONE, PRIMARY KEY ("SEQ_ID"));
+Executing (default): SELECT i.relname AS name, ix.indisprimary AS primary, ix.indisunique AS unique, ix.indkey AS indkey, array_agg(a.attnum) as column_indexes, array_agg(a.attname) AS column_names, pg_get_indexdef(ix.indexrelid) AS definition FROM pg_class t, pg_class i, pg_index ix, pg_attribute a WHERE t.oid = ix.indrelid AND i.oid = ix.indexrelid AND a.attrelid = t.oid AND t.relkind = 'r' and t.relname = 'audit_log' GROUP BY i.relname, ix.indexrelid, ix.indisprimary, ix.indisunique, ix.indkey ORDER BY i.relname;
+Executing (default): CREATE TABLE IF NOT EXISTS "consumer_log" ("SEQ_ID" INTEGER  REFERENCES "Producer_log" ("SEQ_ID") ON DELETE NO ACTION ON UPDATE CASCADE, "TOPICNAME" VARCHAR(255) NOT NULL, "SCHEMA_NAME" VARCHAR(255) NOT NULL, "DESTINATION" VARCHAR(255) NOT NULL, "CONSUMAER_QUERY" JSON NOT NULL, PRIMARY KEY ("SEQ_ID"));
+Executing (default): SELECT i.relname AS name, ix.indisprimary AS primary, ix.indisunique AS unique, ix.indkey AS indkey, array_agg(a.attnum) as column_indexes, array_agg(a.attname) AS column_names, pg_get_indexdef(ix.indexrelid) AS definition FROM pg_class t, pg_class i, pg_index ix, pg_attribute a WHERE t.oid = ix.indrelid AND i.oid = ix.indexrelid AND a.attrelid = t.oid AND t.relkind = 'r' and t.relname = 'consumer_log' GROUP BY i.relname, ix.indexrelid, ix.indisprimary, ix.indisunique, ix.indkey ORDER BY i.relname;
+Executing (default): CREATE TABLE IF NOT EXISTS "test" ("id" INTEGER , "name" VARCHAR(255), "longvarchar" VARCHAR(255), "longlvarchar" VARCHAR(255), "intcol" INTEGER, "floatcol" FLOAT, "blobcol" BYTEA, "clobcol" BYTEA, PRIMARY KEY ("id"));
+Executing (default): SELECT i.relname AS name, ix.indisprimary AS primary, ix.indisunique AS unique, ix.indkey AS indkey, array_agg(a.attnum) as column_indexes, array_agg(a.attname) AS column_names, pg_get_indexdef(ix.indexrelid) AS definition FROM pg_class t, pg_class i, pg_index ix, pg_attribute a WHERE t.oid = ix.indrelid AND i.oid = ix.indexrelid AND a.attrelid = t.oid AND t.relkind = 'r' and t.relname = 'test' GROUP BY i.relname, ix.indexrelid, ix.indisprimary, ix.indisunique, ix.indkey ORDER BY i.relname;
+2019-09-27T16:53:33.384Z INFO no-kafka-client Joined group no-kafka-group-v0.9 generationId 1 as no-kafka-client-8bca62b3-236d-463f-b80e-eae8860dcf8e
+2019-09-27T16:53:33.385Z INFO no-kafka-client Elected as group leader
+2019-09-27T16:53:33.560Z WARN no-kafka-client No partition assignment received
+
