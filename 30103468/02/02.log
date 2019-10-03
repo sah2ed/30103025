@@ -1,0 +1,200 @@
+> protractor-jasmine-typescript@1.0.0 test /opt/subs/02-submission-325996
+> protractor temp/conf.js
+
+[06:04:22] I/launcher - Running 1 instances of WebDriver
+[06:04:22] I/direct - Using ChromeDriver directly...
+Started
+Mail listener initialized
+User navigated to Topcoder Registration Page
+Got page url: https://accounts.topcoder-dev.com/member/registration
+Verified Current Url
+Mail listener initialized
+Got page title: Register | Topcoder
+Verified Page Title
+Got H1 text: JOIN TOPCODER
+Verified H1 text
+Registration form filled with values: firstName - test, lastName - user, country - India, email - e20191003060425@gmail.com username - e20191003060425, password - Password@123
+Submitted registration form
+Got page url: https://accounts.topcoder-dev.com/member/registration-success?retUrl=https:%2F%2Fwww.topcoder-dev.com%2Fsettings%2Fprofile
+Verified Current Url
+Verified registration success message
+.User navigated to Topcoder Registration Page
+Registration form filled with values: firstName - test, lastName - user, country - India, email - e20190928114001+9168370e-5a6e-4c00-8a6d-2c9dcfd68f5e@gmail.com username - e20191003060444, password - Password@123
+Submitted registration form
+Waiting for an email...
+Activation link extracted - https://api.topcoder-dev.com/pub/activation.html?code=13JIAMF1GDH&retUrl=https://www.topcoder-dev.com/settings/profile
+.User navigated to Topcoder Registration Page
+Clicked social auth link with title Register with Github
+.User navigated to Topcoder Registration Page
+Clicked social auth link with title Register with Google
+.User navigated to Topcoder Registration Page
+Clicked social auth link with title Register with Facebook
+.User navigated to Topcoder Registration Page
+.User navigated to Topcoder Registration Page
+Click on link with text Terms
+.User navigated to Topcoder Registration Page
+[06:05:20] W/element - more than one element found for locator By(xpath, //a[contains(text(),'Privacy Policy')]) - the first result will be used
+Click on link with text Privacy Policy
+Verified privacy links
+.User navigated to Topcoder Registration Page
+Click on link with text Log in
+.User navigated to Topcoder Registration Page
+Click on logo
+.User navigated to Topcoder Login Page
+Got page url: https://accounts.topcoder-dev.com/member
+Verified Current Url
+Got page title: Login | Topcoder
+Verified Page Title
+Login form filled with values: username - e2e20190909, password - Password@123
+Submitted login form
+Redirected to home page after login
+[06:05:44] W/element - more than one element found for locator By(xpath, //a[contains(text(),'Log Out')]) - the first result will be used
+Click on link with text Log Out
+Successfully logged out
+.User navigated to Topcoder Login Page
+Got page url: https://accounts.topcoder-dev.com/member
+Verified Current Url
+Got page title: Login | Topcoder
+Verified Page Title
+Login form filled with values: username - e20190928114000@gmail.com, password - Password@123
+Submitted login form
+Redirected to home page after login
+[06:05:59] W/element - more than one element found for locator By(xpath, //a[contains(text(),'Log Out')]) - the first result will be used
+Click on link with text Log Out
+Successfully logged out
+.User navigated to Topcoder Login Page
+[06:06:03] W/element - more than one element found for locator By(css selector, button[type = 'submit']) - the first result will be used
+Waiting for an email...
+Reset password link extracted - https://accounts.topcoder-dev.com/member/reset-password?token=7laKSU&handle=e20190928114004
+Redirected to home page after login
+[06:06:37] W/element - more than one element found for locator By(xpath, //a[contains(text(),'Log Out')]) - the first result will be used
+Click on link with text Log Out
+Successfully logged out
+.User navigated to Topcoder Login Page
+[06:06:41] W/element - more than one element found for locator By(xpath, //a[contains(text(),'Back to Login')]) - the first result will be used
+Click on link with text Back to Login
+.User navigated to Topcoder Login Page
+Login using Google
+Google login: Filled username e20190928114001@gmail.com
+FUser navigated to Topcoder Login Page
+Login using Github
+Github login: Filled username abhikopu+test1@gmail.com, password mancoolgunda@123
+FUser navigated to Topcoder Login Page
+Login using Facebook
+Facebook login successfully completed
+(node:17745) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 exit listeners added. Use emitter.setMaxListeners() to increase limit
+.User navigated to Topcoder Login Page
+Login using Twitter
+Twitter login successfully completed
+.User navigated to Topcoder Login Page
+Click on link with text Join Now
+Redirected to registration page
+.User navigated to Topcoder Login Page
+Verified privacy link
+.User navigated to Topcoder Login Page
+Accessibility menu opened
+.User navigated to Topcoder Login Page
+Tooltip for forgot password displayed
+.User navigated to Topcoder Login Page
+.
+
+Failures:
+1) Topcoder Login Page Tests:  should check if "Log In with Google" is working
+  Message:
+    Failed: Error: Element did not display within 30 seconds
+    Wait timed out after 30011ms
+  Stack:
+    TimeoutError: Error: Element did not display within 30 seconds
+    Wait timed out after 30011ms
+        at /opt/subs/02-submission-325996/node_modules/selenium-webdriver/lib/promise.js:2201:17
+        at ManagedPromise.invokeCallback_ (/opt/subs/02-submission-325996/node_modules/selenium-webdriver/lib/promise.js:1376:14)
+        at TaskQueue.execute_ (/opt/subs/02-submission-325996/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+        at TaskQueue.executeNext_ (/opt/subs/02-submission-325996/node_modules/selenium-webdriver/lib/promise.js:3067:27)
+        at asyncRun (/opt/subs/02-submission-325996/node_modules/selenium-webdriver/lib/promise.js:2927:27)
+        at /opt/subs/02-submission-325996/node_modules/selenium-webdriver/lib/promise.js:668:7
+        at <anonymous>
+        at process._tickCallback (internal/process/next_tick.js:189:7)
+    From: Task: Error: Element did not display within 30 seconds
+        at scheduleWait (/opt/subs/02-submission-325996/node_modules/selenium-webdriver/lib/promise.js:2188:20)
+        at ControlFlow.wait (/opt/subs/02-submission-325996/node_modules/selenium-webdriver/lib/promise.js:2517:12)
+        at Driver.wait (/opt/subs/02-submission-325996/node_modules/selenium-webdriver/lib/webdriver.js:934:29)
+        at run (/opt/subs/02-submission-325996/node_modules/protractor/built/browser.js:59:33)
+        at ProtractorBrowser.to.(anonymous function) [as wait] (/opt/subs/02-submission-325996/node_modules/protractor/built/browser.js:67:16)
+        at Function.<anonymous> (/opt/subs/02-submission-325996/page-objects/pages/topcoder/login/login.helper.ts:72:23)
+        at step (/opt/subs/02-submission-325996/temp/page-objects/pages/topcoder/login/login.helper.js:32:23)
+        at Object.next (/opt/subs/02-submission-325996/temp/page-objects/pages/topcoder/login/login.helper.js:13:53)
+        at fulfilled (/opt/subs/02-submission-325996/temp/page-objects/pages/topcoder/login/login.helper.js:4:58)
+        at <anonymous>
+    From: Task: Run it("should check if "Log In with Google" is working") in control flow
+        at UserContext.<anonymous> (/opt/subs/02-submission-325996/node_modules/jasminewd2/index.js:94:19)
+        at /opt/subs/02-submission-325996/node_modules/jasminewd2/index.js:64:48
+        at ControlFlow.emit (/opt/subs/02-submission-325996/node_modules/selenium-webdriver/lib/events.js:62:21)
+        at ControlFlow.shutdown_ (/opt/subs/02-submission-325996/node_modules/selenium-webdriver/lib/promise.js:2674:10)
+        at shutdownTask_.MicroTask (/opt/subs/02-submission-325996/node_modules/selenium-webdriver/lib/promise.js:2599:53)
+    From asynchronous test:
+    Error
+        at Suite.<anonymous> (/opt/subs/02-submission-325996/test-suites/tc-login.spec.ts:48:5)
+        at Object.<anonymous> (/opt/subs/02-submission-325996/test-suites/tc-login.spec.ts:6:1)
+        at Module._compile (module.js:653:30)
+        at Object.Module._extensions..js (module.js:664:10)
+        at Module.load (module.js:566:32)
+        at tryModuleLoad (module.js:506:12)
+
+2) Topcoder Login Page Tests:  should check if "Log In with Github" is working
+  Message:
+    Failed: Error: Element did not display within 30 seconds
+    Wait timed out after 30001ms
+  Stack:
+    TimeoutError: Error: Element did not display within 30 seconds
+    Wait timed out after 30001ms
+        at /opt/subs/02-submission-325996/node_modules/selenium-webdriver/lib/promise.js:2201:17
+        at ManagedPromise.invokeCallback_ (/opt/subs/02-submission-325996/node_modules/selenium-webdriver/lib/promise.js:1376:14)
+        at TaskQueue.execute_ (/opt/subs/02-submission-325996/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+        at TaskQueue.executeNext_ (/opt/subs/02-submission-325996/node_modules/selenium-webdriver/lib/promise.js:3067:27)
+        at asyncRun (/opt/subs/02-submission-325996/node_modules/selenium-webdriver/lib/promise.js:2927:27)
+        at /opt/subs/02-submission-325996/node_modules/selenium-webdriver/lib/promise.js:668:7
+        at <anonymous>
+        at process._tickCallback (internal/process/next_tick.js:189:7)
+    From: Task: Error: Element did not display within 30 seconds
+        at scheduleWait (/opt/subs/02-submission-325996/node_modules/selenium-webdriver/lib/promise.js:2188:20)
+        at ControlFlow.wait (/opt/subs/02-submission-325996/node_modules/selenium-webdriver/lib/promise.js:2517:12)
+        at Driver.wait (/opt/subs/02-submission-325996/node_modules/selenium-webdriver/lib/webdriver.js:934:29)
+        at run (/opt/subs/02-submission-325996/node_modules/protractor/built/browser.js:59:33)
+        at ProtractorBrowser.to.(anonymous function) [as wait] (/opt/subs/02-submission-325996/node_modules/protractor/built/browser.js:67:16)
+        at Function.<anonymous> (/opt/subs/02-submission-325996/page-objects/pages/topcoder/login/login.helper.ts:43:23)
+        at step (/opt/subs/02-submission-325996/temp/page-objects/pages/topcoder/login/login.helper.js:32:23)
+        at Object.next (/opt/subs/02-submission-325996/temp/page-objects/pages/topcoder/login/login.helper.js:13:53)
+        at /opt/subs/02-submission-325996/temp/page-objects/pages/topcoder/login/login.helper.js:7:71
+        at new Promise (<anonymous>)
+    From: Task: Run it("should check if "Log In with Github" is working") in control flow
+        at UserContext.<anonymous> (/opt/subs/02-submission-325996/node_modules/jasminewd2/index.js:94:19)
+        at /opt/subs/02-submission-325996/node_modules/jasminewd2/index.js:64:48
+        at ControlFlow.emit (/opt/subs/02-submission-325996/node_modules/selenium-webdriver/lib/events.js:62:21)
+        at ControlFlow.shutdown_ (/opt/subs/02-submission-325996/node_modules/selenium-webdriver/lib/promise.js:2674:10)
+        at shutdownTask_.MicroTask (/opt/subs/02-submission-325996/node_modules/selenium-webdriver/lib/promise.js:2599:53)
+    From asynchronous test:
+    Error
+        at Suite.<anonymous> (/opt/subs/02-submission-325996/test-suites/tc-login.spec.ts:53:5)
+        at Object.<anonymous> (/opt/subs/02-submission-325996/test-suites/tc-login.spec.ts:6:1)
+        at Module._compile (module.js:653:30)
+        at Object.Module._extensions..js (module.js:664:10)
+        at Module.load (module.js:566:32)
+        at tryModuleLoad (module.js:506:12)
+
+23 specs, 2 failures
+Finished in 233.789 seconds
+
+[06:08:16] I/launcher - 0 instance(s) of WebDriver still running
+[06:08:16] I/launcher - chrome #01 failed 2 test(s)
+[06:08:16] I/launcher - overall: 2 failed spec(s)
+[06:08:16] E/launcher - Process exited with error code 1
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! protractor-jasmine-typescript@1.0.0 test: `protractor temp/conf.js`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the protractor-jasmine-typescript@1.0.0 test script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/uzer/.npm/_logs/2019-10-03T06_08_17_027Z-debug.log
