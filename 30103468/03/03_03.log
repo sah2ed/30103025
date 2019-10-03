@@ -1,0 +1,289 @@
+npm run test
+
+> tc-account-e2e-tests@1.0.0 test /opt/subs/03-submission-325999
+> protractor conf.js
+
+[08:39:19] I/launcher - Running 2 instances of WebDriver
+[08:39:20] I/testLogger -
+------------------------------------
+
+[08:39:20] I/testLogger - [firefox #11] PID: 21732
+[firefox #11] [08:39:20] I/direct - Using FirefoxDriver directly...
+[firefox #11] [08:39:20] E/runner - Unable to start a WebDriver session.
+[firefox #11] [08:39:20] I/runnerCli - Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line
+
+[08:39:20] I/testLogger -
+
+[08:39:20] E/launcher - Runner process exited unexpectedly with error code: 1
+[08:39:20] I/launcher - 1 instance(s) of WebDriver still running
+FF.....[08:39:49] I/testLogger -
+------------------------------------
+
+[08:39:49] I/testLogger - [chrome #01-0] PID: 21731
+[chrome #01-0] Specs: /opt/subs/03-submission-325999/specs/forgotPasswordSpec.js
+[chrome #01-0]
+[chrome #01-0] [08:39:20] I/direct - Using ChromeDriver directly...
+[chrome #01-0] Jasmine started
+[chrome #01-0]
+[chrome #01-0]   Forgot password Page
+[chrome #01-0]     ? should goto success page if user email is valid
+[chrome #01-0]       - Expected Function to be true.
+[chrome #01-0]           at UserContext.<anonymous> (/opt/subs/03-submission-325999/specs/forgotPasswordSpec.js:26:151)
+[chrome #01-0]           at <anonymous>
+[chrome #01-0]     ? should show error message if user email is not exist
+[chrome #01-0]       - Expected false to be true.
+[chrome #01-0]           at UserContext.<anonymous> (/opt/subs/03-submission-325999/specs/forgotPasswordSpec.js:40:133)
+[chrome #01-0]           at <anonymous>
+[chrome #01-0]           at process._tickCallback (internal/process/next_tick.js:189:7)
+[chrome #01-0]     ? should show error message if user email is invalid
+[chrome #01-0]     ? should goto login page if logo is clicked
+[chrome #01-0]     ? should goto login page if link is clicked
+[chrome #01-0]     ? should goto policy page if click policy link
+[chrome #01-0]     ? should goto reset password page if click reset password email link
+[chrome #01-0]
+[chrome #01-0] **************************************************
+[chrome #01-0] *                    Failures                    *
+[chrome #01-0] **************************************************
+[chrome #01-0]
+[chrome #01-0] 1) Forgot password Page should goto success page if user email is valid
+[chrome #01-0]   - Expected Function to be true.
+[chrome #01-0]
+[chrome #01-0] 2) Forgot password Page should show error message if user email is not exist
+[chrome #01-0]   - Expected false to be true.
+[chrome #01-0]
+[chrome #01-0] Executed 7 of 7 specs (2 FAILED) in 29 secs.
+
+[08:39:49] I/testLogger -
+
+[08:39:49] I/launcher - 1 instance(s) of WebDriver still running
+......FF......[08:41:26] I/testLogger -
+------------------------------------
+
+[08:41:26] I/testLogger - [chrome #01-1] PID: 21834
+[chrome #01-1] Specs: /opt/subs/03-submission-325999/specs/loginSpec.js
+[chrome #01-1]
+[chrome #01-1] [08:39:50] I/direct - Using ChromeDriver directly...
+[chrome #01-1] Jasmine started
+[chrome #01-1]
+[chrome #01-1]   Login Page
+[chrome #01-1]     ? should goto success page if username and password is valid
+[chrome #01-1]     ? should goto success page if user email and password is valid
+[chrome #01-1]     ? should display error message for invalid username
+[chrome #01-1]     ? should display error message for invalid password
+[chrome #01-1]     ? should display password by text if toggle password type
+[chrome #01-1]     ? should goto github login page if link is clicked
+[chrome #01-1]     ? should goto google login page if link is clicked
+[chrome #01-1]       - Failed: timeout: waiting for page to load. The url is: https://accounts.google.com/signin/oauth/identifier
+[chrome #01-1]       Wait timed out after 15003ms
+[chrome #01-1]       Wait timed out after 15003ms
+[chrome #01-1]           at /opt/subs/03-submission-325999/node_modules/selenium-webdriver/lib/promise.js:2201:17
+[chrome #01-1]           at <anonymous>
+[chrome #01-1]           at process._tickCallback (internal/process/next_tick.js:189:7)
+[chrome #01-1]       From asynchronous test:
+[chrome #01-1]       Error
+[chrome #01-1]           at Suite.<anonymous> (/opt/subs/03-submission-325999/specs/loginSpec.js:94:3)
+[chrome #01-1]           at Object.<anonymous> (/opt/subs/03-submission-325999/specs/loginSpec.js:15:1)
+[chrome #01-1]           at Module._compile (module.js:653:30)
+[chrome #01-1]           at loader (/opt/subs/03-submission-325999/node_modules/babel-register/lib/node.js:144:5)
+[chrome #01-1]           at Object.require.extensions.(anonymous function) [as .js] (/opt/subs/03-submission-325999/node_modules/babel-register/lib/node.js:154:7)
+[chrome #01-1]           at Module.load (module.js:566:32)
+[chrome #01-1]     ? should goto facebook login page if link is clicked
+[chrome #01-1]       - Failed: timeout: waiting for page to load. The url is: https://www.facebook.com/dialog/oauth
+[chrome #01-1]       Wait timed out after 15004ms
+[chrome #01-1]       Wait timed out after 15004ms
+[chrome #01-1]           at /opt/subs/03-submission-325999/node_modules/selenium-webdriver/lib/promise.js:2201:17
+[chrome #01-1]           at <anonymous>
+[chrome #01-1]           at process._tickCallback (internal/process/next_tick.js:189:7)
+[chrome #01-1]       From asynchronous test:
+[chrome #01-1]       Error
+[chrome #01-1]           at Suite.<anonymous> (/opt/subs/03-submission-325999/specs/loginSpec.js:104:3)
+[chrome #01-1]           at Object.<anonymous> (/opt/subs/03-submission-325999/specs/loginSpec.js:15:1)
+[chrome #01-1]           at Module._compile (module.js:653:30)
+[chrome #01-1]           at loader (/opt/subs/03-submission-325999/node_modules/babel-register/lib/node.js:144:5)
+[chrome #01-1]           at Object.require.extensions.(anonymous function) [as .js] (/opt/subs/03-submission-325999/node_modules/babel-register/lib/node.js:154:7)
+[chrome #01-1]           at Module.load (module.js:566:32)
+[chrome #01-1]     ? should goto twitter login page if link is clicked
+[chrome #01-1]     ? should goto sso login page if link is clicked
+[chrome #01-1]     ? should goto forgot password page if link is clicked
+[chrome #01-1]     ? should goto register page if link is clicked
+[chrome #01-1]     ? should goto policy page if click policy link
+[chrome #01-1]     ? should show accessibility menu if accessibility icon is clicked
+[chrome #01-1]
+[chrome #01-1] **************************************************
+[chrome #01-1] *                    Failures                    *
+[chrome #01-1] **************************************************
+[chrome #01-1]
+[chrome #01-1] 1) Login Page should goto google login page if link is clicked
+[chrome #01-1]   - Failed: timeout: waiting for page to load. The url is: https://accounts.google.com/signin/oauth/identifier
+[chrome #01-1]   Wait timed out after 15003ms
+[chrome #01-1]
+[chrome #01-1] 2) Login Page should goto facebook login page if link is clicked
+[chrome #01-1]   - Failed: timeout: waiting for page to load. The url is: https://www.facebook.com/dialog/oauth
+[chrome #01-1]   Wait timed out after 15004ms
+[chrome #01-1]
+[chrome #01-1] Executed 14 of 14 specs (2 FAILED) in 1 min 35 secs.
+
+[08:41:26] I/testLogger -
+
+[08:41:26] I/launcher - 1 instance(s) of WebDriver still running
+F...F......FF..[08:43:04] I/testLogger -
+------------------------------------
+
+[08:43:04] I/testLogger - [chrome #01-2] PID: 21952
+[chrome #01-2] Specs: /opt/subs/03-submission-325999/specs/registerSpec.js
+[chrome #01-2]
+[chrome #01-2] [08:41:26] I/direct - Using ChromeDriver directly...
+[chrome #01-2] Jasmine started
+[chrome #01-2] (node:21952) UnhandledPromiseRejectionWarning: StaleElementReferenceError: stale element reference: element is not attached to the page document
+[chrome #01-2]   (Session info: headless chrome=77.0.3865.90)
+[chrome #01-2]   (Driver info: chromedriver=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442}),platform=Linux 5.0.0-27-generic x86_64)
+[chrome #01-2]     at Object.checkLegacyResponse (/opt/subs/03-submission-325999/node_modules/selenium-webdriver/lib/error.js:546:15)
+[chrome #01-2]     at parseHttpResponse (/opt/subs/03-submission-325999/node_modules/selenium-webdriver/lib/http.js:509:13)
+[chrome #01-2]     at doSend.then.response (/opt/subs/03-submission-325999/node_modules/selenium-webdriver/lib/http.js:441:30)
+[chrome #01-2]     at <anonymous>
+[chrome #01-2]     at process._tickCallback (internal/process/next_tick.js:189:7)Error
+[chrome #01-2]     at ElementArrayFinder.applyAction_ (/opt/subs/03-submission-325999/node_modules/protractor/built/element.js:459:27)
+[chrome #01-2]     at ElementArrayFinder.(anonymous function).args [as click] (/opt/subs/03-submission-325999/node_modules/protractor/built/element.js:91:29)
+[chrome #01-2]     at ElementFinder.(anonymous function).args [as click] (/opt/subs/03-submission-325999/node_modules/protractor/built/element.js:831:22)
+[chrome #01-2]     at RegisterPage.register (/opt/subs/03-submission-325999/pages/registerPage.js:44:27)
+[chrome #01-2]     at <anonymous>
+[chrome #01-2]     at process._tickCallback (internal/process/next_tick.js:189:7)
+[chrome #01-2] (node:21952) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
+[chrome #01-2] (node:21952) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+[chrome #01-2]
+[chrome #01-2]   Register Page
+[chrome #01-2]     ? should goto success page if new user is valid
+[chrome #01-2]       - Expected false to be true.
+[chrome #01-2]           at UserContext.<anonymous> (/opt/subs/03-submission-325999/specs/registerSpec.js:25:55)
+[chrome #01-2]           at <anonymous>
+[chrome #01-2]           at process._tickCallback (internal/process/next_tick.js:189:7)
+[chrome #01-2]       - Failed: timeout: waiting for page to load. The url is: https://accounts.topcoder-dev.com/member/registration-success
+[chrome #01-2]       Wait timed out after 15001ms
+[chrome #01-2]       Wait timed out after 15001ms
+[chrome #01-2]           at /opt/subs/03-submission-325999/node_modules/selenium-webdriver/lib/promise.js:2201:17
+[chrome #01-2]           at <anonymous>
+[chrome #01-2]           at process._tickCallback (internal/process/next_tick.js:189:7)
+[chrome #01-2]       From asynchronous test:
+[chrome #01-2]       Error
+[chrome #01-2]           at Suite.<anonymous> (/opt/subs/03-submission-325999/specs/registerSpec.js:18:3)
+[chrome #01-2]           at Object.<anonymous> (/opt/subs/03-submission-325999/specs/registerSpec.js:13:1)
+[chrome #01-2]           at Module._compile (module.js:653:30)
+[chrome #01-2]           at loader (/opt/subs/03-submission-325999/node_modules/babel-register/lib/node.js:144:5)
+[chrome #01-2]           at Object.require.extensions.(anonymous function) [as .js] (/opt/subs/03-submission-325999/node_modules/babel-register/lib/node.js:154:7)
+[chrome #01-2]           at Module.load (module.js:566:32)
+[chrome #01-2]     ? should display error message for invalid country
+[chrome #01-2]     ? should display error message for exist username
+[chrome #01-2]     ? should display error message for missing email
+[chrome #01-2]     ? should display error message for invalid email
+[chrome #01-2]       - Failed: No element found using locator: by.cssContainingText(".form-input-error", "Please enter a valid email address.")
+[chrome #01-2]           at elementArrayFinder.getWebElements.then (/opt/subs/03-submission-325999/node_modules/protractor/built/element.js:814:27)
+[chrome #01-2]           at <anonymous>
+[chrome #01-2]           at process._tickCallback (internal/process/next_tick.js:189:7)Error
+[chrome #01-2]           at ElementArrayFinder.applyAction_ (/opt/subs/03-submission-325999/node_modules/protractor/built/element.js:459:27)
+[chrome #01-2]           at ElementArrayFinder.(anonymous function).args [as isDisplayed] (/opt/subs/03-submission-325999/node_modules/protractor/built/element.js:91:29)
+[chrome #01-2]           at ElementFinder.(anonymous function).args [as isDisplayed] (/opt/subs/03-submission-325999/node_modules/protractor/built/element.js:831:22)
+[chrome #01-2]           at RegisterPage.errorMessageDisplay (/opt/subs/03-submission-325999/pages/registerPage.js:59:77)
+[chrome #01-2]           at <anonymous>
+[chrome #01-2]       From asynchronous test:
+[chrome #01-2]       Error
+[chrome #01-2]           at Suite.<anonymous> (/opt/subs/03-submission-325999/specs/registerSpec.js:58:3)
+[chrome #01-2]           at Object.<anonymous> (/opt/subs/03-submission-325999/specs/registerSpec.js:13:1)
+[chrome #01-2]           at Module._compile (module.js:653:30)
+[chrome #01-2]           at loader (/opt/subs/03-submission-325999/node_modules/babel-register/lib/node.js:144:5)
+[chrome #01-2]           at Object.require.extensions.(anonymous function) [as .js] (/opt/subs/03-submission-325999/node_modules/babel-register/lib/node.js:154:7)
+[chrome #01-2]           at Module.load (module.js:566:32)
+[chrome #01-2] (node:21952) UnhandledPromiseRejectionWarning: StaleElementReferenceError: stale element reference: element is not attached to the page document
+[chrome #01-2]   (Session info: headless chrome=77.0.3865.90)
+[chrome #01-2]   (Driver info: chromedriver=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442}),platform=Linux 5.0.0-27-generic x86_64)
+[chrome #01-2]     at Object.checkLegacyResponse (/opt/subs/03-submission-325999/node_modules/selenium-webdriver/lib/error.js:546:15)
+[chrome #01-2]     at parseHttpResponse (/opt/subs/03-submission-325999/node_modules/selenium-webdriver/lib/http.js:509:13)
+[chrome #01-2]     at doSend.then.response (/opt/subs/03-submission-325999/node_modules/selenium-webdriver/lib/http.js:441:30)
+[chrome #01-2]     at <anonymous>
+[chrome #01-2]     at process._tickCallback (internal/process/next_tick.js:189:7)Error
+[chrome #01-2]     at ElementArrayFinder.applyAction_ (/opt/subs/03-submission-325999/node_modules/protractor/built/element.js:459:27)
+[chrome #01-2]     at ElementArrayFinder.(anonymous function).args [as click] (/opt/subs/03-submission-325999/node_modules/protractor/built/element.js:91:29)
+[chrome #01-2]     at ElementFinder.(anonymous function).args [as click] (/opt/subs/03-submission-325999/node_modules/protractor/built/element.js:831:22)
+[chrome #01-2]     at RegisterPage.register (/opt/subs/03-submission-325999/pages/registerPage.js:44:27)
+[chrome #01-2]     at <anonymous>
+[chrome #01-2]     at process._tickCallback (internal/process/next_tick.js:189:7)
+[chrome #01-2] (node:21952) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 2)
+[chrome #01-2]     ? should display error message for exist email
+[chrome #01-2]     ? should display password by text if toggle password type
+[chrome #01-2]     ? should goto terms page if link is clicked
+[chrome #01-2]     ? should goto policy page if click policy link 1
+[chrome #01-2]     ? should goto policy page if click policy link 2
+[chrome #01-2]     ? should goto github login page if link is clicked
+[chrome #01-2]     ? should goto google login page if link is clicked
+[chrome #01-2]       - Failed: timeout: waiting for page to load. The url is: https://accounts.google.com/signin/oauth/identifier
+[chrome #01-2]       Wait timed out after 15004ms
+[chrome #01-2]       Wait timed out after 15004ms
+[chrome #01-2]           at /opt/subs/03-submission-325999/node_modules/selenium-webdriver/lib/promise.js:2201:17
+[chrome #01-2]           at <anonymous>
+[chrome #01-2]           at process._tickCallback (internal/process/next_tick.js:189:7)
+[chrome #01-2]       From asynchronous test:
+[chrome #01-2]       Error
+[chrome #01-2]           at Suite.<anonymous> (/opt/subs/03-submission-325999/specs/registerSpec.js:125:3)
+[chrome #01-2]           at Object.<anonymous> (/opt/subs/03-submission-325999/specs/registerSpec.js:13:1)
+[chrome #01-2]           at Module._compile (module.js:653:30)
+[chrome #01-2]           at loader (/opt/subs/03-submission-325999/node_modules/babel-register/lib/node.js:144:5)
+[chrome #01-2]           at Object.require.extensions.(anonymous function) [as .js] (/opt/subs/03-submission-325999/node_modules/babel-register/lib/node.js:154:7)
+[chrome #01-2]           at Module.load (module.js:566:32)
+[chrome #01-2]     ? should goto facebook login page if link is clicked
+[chrome #01-2]       - Failed: timeout: waiting for page to load. The url is: https://www.facebook.com/dialog/oauth
+[chrome #01-2]       Wait timed out after 15001ms
+[chrome #01-2]       Wait timed out after 15001ms
+[chrome #01-2]           at /opt/subs/03-submission-325999/node_modules/selenium-webdriver/lib/promise.js:2201:17
+[chrome #01-2]           at <anonymous>
+[chrome #01-2]           at process._tickCallback (internal/process/next_tick.js:189:7)
+[chrome #01-2]       From asynchronous test:
+[chrome #01-2]       Error
+[chrome #01-2]           at Suite.<anonymous> (/opt/subs/03-submission-325999/specs/registerSpec.js:135:3)
+[chrome #01-2]           at Object.<anonymous> (/opt/subs/03-submission-325999/specs/registerSpec.js:13:1)
+[chrome #01-2]           at Module._compile (module.js:653:30)
+[chrome #01-2]           at loader (/opt/subs/03-submission-325999/node_modules/babel-register/lib/node.js:144:5)
+[chrome #01-2]           at Object.require.extensions.(anonymous function) [as .js] (/opt/subs/03-submission-325999/node_modules/babel-register/lib/node.js:154:7)
+[chrome #01-2]           at Module.load (module.js:566:32)
+[chrome #01-2]     ? should goto login page if logo is clicked
+[chrome #01-2]     ? should goto login page if link is clicked
+[chrome #01-2]
+[chrome #01-2] **************************************************
+[chrome #01-2] *                    Failures                    *
+[chrome #01-2] **************************************************
+[chrome #01-2]
+[chrome #01-2] 1) Register Page should goto success page if new user is valid
+[chrome #01-2]   - Expected false to be true.
+[chrome #01-2]   - Failed: timeout: waiting for page to load. The url is: https://accounts.topcoder-dev.com/member/registration-success
+[chrome #01-2]   Wait timed out after 15001ms
+[chrome #01-2]
+[chrome #01-2] 2) Register Page should display error message for invalid email
+[chrome #01-2]   - Failed: No element found using locator: by.cssContainingText(".form-input-error", "Please enter a valid email address.")
+[chrome #01-2]
+[chrome #01-2] 3) Register Page should goto google login page if link is clicked
+[chrome #01-2]   - Failed: timeout: waiting for page to load. The url is: https://accounts.google.com/signin/oauth/identifier
+[chrome #01-2]   Wait timed out after 15004ms
+[chrome #01-2]
+[chrome #01-2] 4) Register Page should goto facebook login page if link is clicked
+[chrome #01-2]   - Failed: timeout: waiting for page to load. The url is: https://www.facebook.com/dialog/oauth
+[chrome #01-2]   Wait timed out after 15001ms
+[chrome #01-2]
+[chrome #01-2] Executed 15 of 15 specs (4 FAILED) in 1 min 37 secs.
+
+[08:43:04] I/testLogger -
+
+[08:43:04] I/launcher - 0 instance(s) of WebDriver still running
+[08:43:04] I/launcher - firefox #11 failed with exit code: 1
+[08:43:04] I/launcher - chrome #01-0 failed 2 test(s)
+[08:43:04] I/launcher - chrome #01-1 failed 2 test(s)
+[08:43:04] I/launcher - chrome #01-2 failed 4 test(s)
+[08:43:04] I/launcher - overall: 8 failed spec(s) and 1 process(es) failed to complete
+[08:43:04] E/launcher - Process exited with error code 100
+npm ERR! code ELIFECYCLE
+npm ERR! errno 100
+npm ERR! tc-account-e2e-tests@1.0.0 test: `protractor conf.js`
+npm ERR! Exit status 100
+npm ERR!
+npm ERR! Failed at the tc-account-e2e-tests@1.0.0 test script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/uzer/.npm/_logs/2019-10-03T08_43_04_321Z-debug.log

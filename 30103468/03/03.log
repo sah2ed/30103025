@@ -1,0 +1,120 @@
+npm run lint
+
+> tc-account-e2e-tests@1.0.0 lint /opt/subs/03-submission-325999
+> standard
+
+standard: Use JavaScript Standard Style (https://standardjs.com)
+standard: Run `standard --fix` to automatically fix some problems.
+  /opt/subs/03-submission-325999/conf.js:49:9: Unnecessarily quoted property 'credentials_enable_service' found.
+  /opt/subs/03-submission-325999/conf.js:50:9: Unnecessarily quoted property 'password_manager_enabled' found.
+  /opt/subs/03-submission-325999/conf.js:56:7: Unnecessarily quoted property 'args' found.
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! tc-account-e2e-tests@1.0.0 lint: `standard`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the tc-account-e2e-tests@1.0.0 lint script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/uzer/.npm/_logs/2019-10-03T06_13_45_692Z-debug.log
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+npm run test
+
+> tc-account-e2e-tests@1.0.0 test /opt/subs/03-submission-325999
+> protractor conf.js
+
+[06:23:21] I/launcher - Running 2 instances of WebDriver
+[06:23:22] I/testLogger -
+------------------------------------
+
+[06:23:22] I/testLogger - [firefox #11] PID: 19096
+[firefox #11] [06:23:22] I/direct - Using FirefoxDriver directly...
+[firefox #11] [06:23:22] E/runner - Unable to start a WebDriver session.
+[firefox #11] [06:23:22] I/runnerCli - Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line
+
+[06:23:22] I/testLogger -
+
+[06:23:22] E/launcher - Runner process exited unexpectedly with error code: 1
+[06:23:22] I/launcher - 1 instance(s) of WebDriver still running
+[06:23:22] I/testLogger -
+------------------------------------
+
+[06:23:22] I/testLogger - [chrome #01-0] PID: 19091
+[chrome #01-0] Specs: /opt/subs/03-submission-325999/specs/forgotPasswordSpec.js
+[chrome #01-0]
+[chrome #01-0] [06:23:22] I/direct - Using ChromeDriver directly...
+[chrome #01-0] [06:23:22] E/runner - Unable to start a WebDriver session.
+[chrome #01-0] [06:23:22] I/runnerCli - unknown error: Chrome failed to start: exited abnormally
+[chrome #01-0]   (unknown error: DevToolsActivePort file doesn't exist)
+[chrome #01-0]   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+[chrome #01-0]   (Driver info: chromedriver=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442}),platform=Linux 5.0.0-27-generic x86_64)
+
+[06:23:22] I/testLogger -
+
+[06:23:22] E/launcher - Runner process exited unexpectedly with error code: 1
+[06:23:22] I/launcher - 1 instance(s) of WebDriver still running
+[06:23:23] I/testLogger -
+------------------------------------
+
+[06:23:23] I/testLogger - [chrome #01-1] PID: 19147
+[chrome #01-1] Specs: /opt/subs/03-submission-325999/specs/loginSpec.js
+[chrome #01-1]
+[chrome #01-1] [06:23:23] I/direct - Using ChromeDriver directly...
+[chrome #01-1] [06:23:23] E/runner - Unable to start a WebDriver session.
+[chrome #01-1] [06:23:23] I/runnerCli - unknown error: Chrome failed to start: exited abnormally
+[chrome #01-1]   (unknown error: DevToolsActivePort file doesn't exist)
+[chrome #01-1]   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+[chrome #01-1]   (Driver info: chromedriver=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442}),platform=Linux 5.0.0-27-generic x86_64)
+
+[06:23:23] I/testLogger -
+
+[06:23:23] E/launcher - Runner process exited unexpectedly with error code: 1
+[06:23:23] I/launcher - 1 instance(s) of WebDriver still running
+[06:23:24] I/testLogger -
+------------------------------------
+
+[06:23:24] I/testLogger - [chrome #01-2] PID: 19185
+[chrome #01-2] Specs: /opt/subs/03-submission-325999/specs/registerSpec.js
+[chrome #01-2]
+[chrome #01-2] [06:23:23] I/direct - Using ChromeDriver directly...
+[chrome #01-2] [06:23:24] E/runner - Unable to start a WebDriver session.
+[chrome #01-2] [06:23:24] I/runnerCli - unknown error: Chrome failed to start: exited abnormally
+[chrome #01-2]   (unknown error: DevToolsActivePort file doesn't exist)
+[chrome #01-2]   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+[chrome #01-2]   (Driver info: chromedriver=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442}),platform=Linux 5.0.0-27-generic x86_64)
+
+[06:23:24] I/testLogger -
+
+[06:23:24] E/launcher - Runner process exited unexpectedly with error code: 1
+[06:23:24] I/launcher - 0 instance(s) of WebDriver still running
+[06:23:24] I/launcher - firefox #11 failed with exit code: 1
+[06:23:24] I/launcher - chrome #01-0 failed with exit code: 1
+[06:23:24] I/launcher - chrome #01-1 failed with exit code: 1
+[06:23:24] I/launcher - chrome #01-2 failed with exit code: 1
+[06:23:24] I/launcher - overall: 4 process(es) failed to complete
+[06:23:24] E/launcher - Process exited with error code 100
+npm ERR! code ELIFECYCLE
+npm ERR! errno 100
+npm ERR! tc-account-e2e-tests@1.0.0 test: `protractor conf.js`
+npm ERR! Exit status 100
+npm ERR!
+npm ERR! Failed at the tc-account-e2e-tests@1.0.0 test script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/uzer/.npm/_logs/2019-10-03T06_23_24_259Z-debug.log
