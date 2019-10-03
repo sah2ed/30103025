@@ -1,0 +1,34 @@
+> topcoder-account-e2e@1.0.0 tsc /opt/subs/01-submission-325991
+> tsc --skipLibCheck
+
+[05:39:59] I/launcher - Running 1 instances of WebDriver
+[05:39:59] I/direct - Using ChromeDriver directly...
+Jasmine started
+
+  1 Login Page
+    ? TC_001 - To verify user is able to login successfully using username (12 secs)
+    ? TC_002 - To verify user is able to login successfully using email ID (13 secs)
+    ? TC_002 - To verify user is able to reset the password successfully using Forgot Password option (4 secs)
+    ? TC_003 - To check if Log In with Google is working (4 secs)
+    ? TC_004 - To check if Log In with Facebook is working (3 secs)
+    ? TC_005 - To check if Log In with Github is working (3 secs)
+    ? TC_006 - To check if Log In with Twitter is working (2 secs)
+    ? TC_004 - To verify whether the user is redirected to the Registration page on clicking the Join Now link (2 secs)
+    ? TC_005 - To verify whether the user is redirected to the privacy policy page on clicking the Privacy Policy link (5 secs)
+    ? TC_006 - To verify whether the user is able to change the display on clicking the features in the Accessibility menu (4 secs)
+    ? TC_007 - To verify if Show/Hide Password button works (2 secs)
+
+  2 Registration Page
+    ? TC_001 - verifies user is able to succesfully register (14 secs)
+    ? TC_002 - verifies user is able to register using Github credentials (2 secs)
+    ? TC_003 - verifies user is able to register using Google credentials (3 secs)
+    ? TC_004 - verifies user is able to register using Facebook credentials (2 secs)
+    ? TC_005 - verifies if Show/Hide Password button works (2 secs)
+    ? TC_006 - verifies whether the user is redirected to Terms page on clicking the Terms link (3 secs)
+    ? TC_007 - verifies whether the user is redirected to Privacy Policy page on clicking the Privacy Policy link (5 secs)
+    ? TC_008 - verifies whether the user is redirected to the Login page on clicking the LOG IN link (1 sec)
+    ? TC_009 - verifies if clicking on Logo takes the user to the Login screen (1 sec)
+
+Executed 20 of 20 specs SUCCESS in 1 min 27 secs.
+[05:41:26] I/launcher - 0 instance(s) of WebDriver still running
+[05:41:26] I/launcher - chrome #01 passed
