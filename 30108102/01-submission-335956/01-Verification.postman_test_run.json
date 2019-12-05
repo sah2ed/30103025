@@ -1,0 +1,2121 @@
+{
+	"id": "487e5e62-5a83-451c-a315-28fb4ee50458",
+	"name": "Verification",
+	"allTests": [],
+	"timestamp": "2019-12-05T16:14:48.335Z",
+	"collection_id": "aea1ada7-4e18-449e-8e78-8774e8faaf1e",
+	"folder_id": "a11acb1e-794a-476a-b747-43bbc06db9c3",
+	"target_type": "folder",
+	"environment_id": "4fec3759-cfc5-4d50-8f2b-085c150b70a8",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "aea1ada7-4e18-449e-8e78-8774e8faaf1e",
+		"name": "informix2postgresql",
+		"description": null,
+		"auth": null,
+		"events": null,
+		"variables": null,
+		"order": [],
+		"folders_order": [
+			"a11acb1e-794a-476a-b747-43bbc06db9c3",
+			"6cb6c153-85e9-4f51-84fd-833f374c1b9e"
+		],
+		"owner": "0",
+		"permissions": {},
+		"favorite": false,
+		"shared": false,
+		"type": "collection",
+		"depth": 0
+	},
+	"folder": {
+		"id": "a11acb1e-794a-476a-b747-43bbc06db9c3",
+		"name": "Verification",
+		"description": null,
+		"auth": null,
+		"events": null,
+		"collection": "aea1ada7-4e18-449e-8e78-8774e8faaf1e",
+		"folder": null,
+		"order": [
+			"634b4587-12e0-44e2-9248-9ec3758612f7",
+			"10df190f-5a99-4dc5-9e8d-091c6287a4e5",
+			"6ac28fc1-b40b-428f-976d-f11ce43ffa69",
+			"f9ed9f8f-3fcd-4165-8bc9-7af956730675",
+			"dd197e8e-afc6-49fc-9627-9f81a7e8e3fb",
+			"4a18c9a4-c534-44b2-ba37-5f38b07016e2",
+			"6861dca3-b043-4618-8a6b-71663d9fa345",
+			"ae851d8b-2fe1-42d0-a4dd-4039263a1737",
+			"e8a325d7-521a-4528-aa3d-3c563fb21e73",
+			"b902496d-c2ca-41bf-9b10-a403536cb304",
+			"0aade13d-6008-4a9b-8a1c-c710dad2e2d6",
+			"205b4d8f-ad79-4ba4-8b3b-6c59b9912e74",
+			"8b31a8e5-a4e2-45bc-bfd8-5052b0ee8623",
+			"075a7161-d65e-4e0d-be77-d23da903f428",
+			"cc0ab1cd-52cb-48dc-b8e2-61ea6925baee",
+			"3681f016-6b29-48a3-9e93-cced43595baa",
+			"c747c54a-687a-458d-889c-43629c886150",
+			"401f6bd3-529e-4398-a3dd-77aa96e6072e",
+			"2b74547b-0a22-405e-b8d8-4dfff1b7b556",
+			"4c03b114-ae49-4fc2-b800-0b3e1ed425f8",
+			"9e5bc084-8f3e-42a8-ac6b-733fde88460d",
+			"f903f8d3-59ce-4554-a2bb-51895015abea",
+			"df770182-6bc4-4747-9784-4a75270c4651",
+			"10665796-80f3-43d0-ba1d-0e38316df738",
+			"89991db4-8419-4ab9-b0f1-d9289130d44d",
+			"5398d9b6-814d-4b02-99a6-8b3a5231cc14",
+			"1fdcaf94-86c4-42db-bd91-4f427e3cf7bd",
+			"610ed37f-40a8-4df9-9ffe-4bcc919e588e",
+			"47dd7d07-9a68-4bb7-8cd2-a54b8a3e0549",
+			"3837a90c-e690-45de-994a-6663bc6cf651",
+			"353b9690-463f-46b1-8802-2e1501dfb005",
+			"4fae2e8c-79fe-4b4f-8431-1668ad469bff",
+			"72d2a2fb-1687-4dca-933e-00caa9ec6a7e",
+			"375801e3-cf84-458b-aae6-126aab0e709a"
+		],
+		"folders_order": [],
+		"type": "folder",
+		"depth": 1
+	},
+	"environment": null,
+	"globals": [],
+	"results": [
+		{
+			"name": "create user record",
+			"id": "634b4587-12e0-44e2-9248-9ec3758612f7",
+			"url": "http://localhost:8080/v3/users",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {
+				"error": {
+					"actual": 400,
+					"expected": 200,
+					"message": "expected response to have status code 200 but got 400",
+					"name": "AssertionError",
+					"showDiff": true,
+					"stack": "AssertionError: expected response to have status code 200 but got 400\n    at eval (eval at exec (evalmachine.<anonymous>:12494:2548), <anonymous>:5:25)\n    at Postman.n.test (evalmachine.<anonymous>:75:212)\n    at Object.eval (eval at exec (evalmachine.<anonymous>:12494:2548), <anonymous>:4:4)\n    at Uniscope.exec (evalmachine.<anonymous>:12494:2583)\n    at module.exports (evalmachine.<anonymous>:63:538)\n    at Object.<anonymous> (evalmachine.<anonymous>:66:1694)\n    at evalmachine.<anonymous>:16:26\n    at Array.forEach (<anonymous>)\n    at Object.emit (evalmachine.<anonymous>:15:54)\n    at evalmachine.<anonymous>:52:24"
+				},
+				"name": "Status code is 200",
+				"status": "fail"
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				"770"
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			],
+			"time": "770",
+			"totalRequestTime": "770",
+			"iterationResults": {}
+		},
+		{
+			"name": "create user record handle already exist",
+			"id": "10df190f-5a99-4dc5-9e8d-091c6287a4e5",
+			"url": "http://localhost:8080/v3/users",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {
+				"error": null,
+				"name": "Status code is 400",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"296"
+			],
+			"allTests": [
+				{
+					"Status code is 400": true
+				}
+			],
+			"time": "296",
+			"totalRequestTime": "296",
+			"iterationResults": {}
+		},
+		{
+			"name": "create user record email already exist",
+			"id": "6ac28fc1-b40b-428f-976d-f11ce43ffa69",
+			"url": "http://localhost:8080/v3/users",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {
+				"error": null,
+				"name": "Status code is 400",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"289"
+			],
+			"allTests": [
+				{
+					"Status code is 400": true
+				}
+			],
+			"time": "289",
+			"totalRequestTime": "289",
+			"iterationResults": {}
+		},
+		{
+			"name": "create user sso login record",
+			"id": "f9ed9f8f-3fcd-4165-8bc9-7af956730675",
+			"url": "http://localhost:8080/v3/users/{{userId}}/SSOUserLogin",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"tests": {
+				"error": {
+					"actual": 404,
+					"expected": 200,
+					"message": "expected response to have status code 200 but got 404",
+					"name": "AssertionError",
+					"showDiff": true,
+					"stack": "AssertionError: expected response to have status code 200 but got 404\n    at eval (eval at exec (evalmachine.<anonymous>:12494:2548), <anonymous>:5:25)\n    at Postman.n.test (evalmachine.<anonymous>:75:212)\n    at Object.eval (eval at exec (evalmachine.<anonymous>:12494:2548), <anonymous>:4:4)\n    at Uniscope.exec (evalmachine.<anonymous>:12494:2583)\n    at module.exports (evalmachine.<anonymous>:63:538)\n    at Object.<anonymous> (evalmachine.<anonymous>:66:1694)\n    at evalmachine.<anonymous>:16:26\n    at Array.forEach (<anonymous>)\n    at Object.emit (evalmachine.<anonymous>:15:54)\n    at evalmachine.<anonymous>:52:24"
+				},
+				"name": "Status code is 200",
+				"status": "fail"
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				"356"
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			],
+			"time": "356",
+			"totalRequestTime": "356",
+			"iterationResults": {}
+		},
+		{
+			"name": "delete user sso login record by provider id",
+			"id": "dd197e8e-afc6-49fc-9627-9f81a7e8e3fb",
+			"url": "http://localhost:8080/v3/users/{{userId}}/SSOUserLogin?providerId=1",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"tests": {
+				"error": {
+					"actual": 404,
+					"expected": 200,
+					"message": "expected response to have status code 200 but got 404",
+					"name": "AssertionError",
+					"showDiff": true,
+					"stack": "AssertionError: expected response to have status code 200 but got 404\n    at eval (eval at exec (evalmachine.<anonymous>:12494:2548), <anonymous>:5:25)\n    at Postman.n.test (evalmachine.<anonymous>:75:212)\n    at Object.eval (eval at exec (evalmachine.<anonymous>:12494:2548), <anonymous>:4:4)\n    at Uniscope.exec (evalmachine.<anonymous>:12494:2583)\n    at module.exports (evalmachine.<anonymous>:63:538)\n    at Object.<anonymous> (evalmachine.<anonymous>:66:1694)\n    at evalmachine.<anonymous>:16:26\n    at Array.forEach (<anonymous>)\n    at Object.emit (evalmachine.<anonymous>:15:54)\n    at evalmachine.<anonymous>:52:24"
+				},
+				"name": "Status code is 200",
+				"status": "fail"
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				"402"
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			],
+			"time": "402",
+			"totalRequestTime": "402",
+			"iterationResults": {}
+		},
+		{
+			"name": "delete user sso login record by provider id not exist",
+			"id": "4a18c9a4-c534-44b2-ba37-5f38b07016e2",
+			"url": "http://localhost:8080/v3/users/132456/SSOUserLogin?providerId=1",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"tests": {
+				"error": null,
+				"name": "Status code is 404",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"731"
+			],
+			"allTests": [
+				{
+					"Status code is 404": true
+				}
+			],
+			"time": "731",
+			"totalRequestTime": "731",
+			"iterationResults": {}
+		},
+		{
+			"name": "update user record - name",
+			"id": "6861dca3-b043-4618-8a6b-71663d9fa345",
+			"url": "http://localhost:8080/v3/users/{{userId}}",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {
+				"error": {
+					"actual": 400,
+					"expected": 200,
+					"message": "expected response to have status code 200 but got 400",
+					"name": "AssertionError",
+					"showDiff": true,
+					"stack": "AssertionError: expected response to have status code 200 but got 400\n    at eval (eval at exec (evalmachine.<anonymous>:12494:2548), <anonymous>:5:25)\n    at Postman.n.test (evalmachine.<anonymous>:75:212)\n    at Object.eval (eval at exec (evalmachine.<anonymous>:12494:2548), <anonymous>:4:4)\n    at Uniscope.exec (evalmachine.<anonymous>:12494:2583)\n    at module.exports (evalmachine.<anonymous>:63:538)\n    at Object.<anonymous> (evalmachine.<anonymous>:66:1694)\n    at evalmachine.<anonymous>:16:26\n    at Array.forEach (<anonymous>)\n    at Object.emit (evalmachine.<anonymous>:15:54)\n    at evalmachine.<anonymous>:52:24"
+				},
+				"name": "Status code is 200",
+				"status": "fail"
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				"208"
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			],
+			"time": "208",
+			"totalRequestTime": "208",
+			"iterationResults": {}
+		},
+		{
+			"name": "update user record - password",
+			"id": "ae851d8b-2fe1-42d0-a4dd-4039263a1737",
+			"url": "http://localhost:8080/v3/users/{{userId}}",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {
+				"error": {
+					"actual": 400,
+					"expected": 200,
+					"message": "expected response to have status code 200 but got 400",
+					"name": "AssertionError",
+					"showDiff": true,
+					"stack": "AssertionError: expected response to have status code 200 but got 400\n    at eval (eval at exec (evalmachine.<anonymous>:12494:2548), <anonymous>:5:25)\n    at Postman.n.test (evalmachine.<anonymous>:75:212)\n    at Object.eval (eval at exec (evalmachine.<anonymous>:12494:2548), <anonymous>:4:4)\n    at Uniscope.exec (evalmachine.<anonymous>:12494:2583)\n    at module.exports (evalmachine.<anonymous>:63:538)\n    at Object.<anonymous> (evalmachine.<anonymous>:66:1694)\n    at evalmachine.<anonymous>:16:26\n    at Array.forEach (<anonymous>)\n    at Object.emit (evalmachine.<anonymous>:15:54)\n    at evalmachine.<anonymous>:52:24"
+				},
+				"name": "Status code is 200",
+				"status": "fail"
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				"265"
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			],
+			"time": "265",
+			"totalRequestTime": "265",
+			"iterationResults": {}
+		},
+		{
+			"name": "update handle",
+			"id": "e8a325d7-521a-4528-aa3d-3c563fb21e73",
+			"url": "http://localhost:8080/v3/users/{{userId}}/handle",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {
+				"error": {
+					"actual": 400,
+					"expected": 200,
+					"message": "expected response to have status code 200 but got 400",
+					"name": "AssertionError",
+					"showDiff": true,
+					"stack": "AssertionError: expected response to have status code 200 but got 400\n    at eval (eval at exec (evalmachine.<anonymous>:12494:2548), <anonymous>:5:25)\n    at Postman.n.test (evalmachine.<anonymous>:75:212)\n    at Object.eval (eval at exec (evalmachine.<anonymous>:12494:2548), <anonymous>:4:4)\n    at Uniscope.exec (evalmachine.<anonymous>:12494:2583)\n    at module.exports (evalmachine.<anonymous>:63:538)\n    at Object.<anonymous> (evalmachine.<anonymous>:66:1694)\n    at evalmachine.<anonymous>:16:26\n    at Array.forEach (<anonymous>)\n    at Object.emit (evalmachine.<anonymous>:15:54)\n    at evalmachine.<anonymous>:52:24"
+				},
+				"name": "Status code is 200",
+				"status": "fail"
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				"263"
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			],
+			"time": "263",
+			"totalRequestTime": "263",
+			"iterationResults": {}
+		},
+		{
+			"name": "update handle already exist",
+			"id": "b902496d-c2ca-41bf-9b10-a403536cb304",
+			"url": "http://localhost:8080/v3/users/{{userId}}/handle",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {
+				"error": {
+					"actual": "ID is invalid",
+					"expected": "Handle 'heffan' has already been taken",
+					"message": "expected 'ID is invalid' to deeply equal 'Handle \\'heffan\\' has already been taken'",
+					"name": "AssertionError",
+					"showDiff": true,
+					"stack": "AssertionError: expected 'ID is invalid' to deeply equal 'Handle \\'heffan\\' has already been taken'\n    at eval (eval at exec (evalmachine.<anonymous>:12494:2548), <anonymous>:10:43)\n    at Postman.n.test (evalmachine.<anonymous>:75:212)\n    at Object.eval (eval at exec (evalmachine.<anonymous>:12494:2548), <anonymous>:4:4)\n    at Uniscope.exec (evalmachine.<anonymous>:12494:2583)\n    at module.exports (evalmachine.<anonymous>:63:538)\n    at Object.<anonymous> (evalmachine.<anonymous>:66:1694)\n    at evalmachine.<anonymous>:16:26\n    at Array.forEach (<anonymous>)\n    at Object.emit (evalmachine.<anonymous>:15:54)\n    at evalmachine.<anonymous>:52:24"
+				},
+				"name": "Status code is 400",
+				"status": "fail"
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				"250"
+			],
+			"allTests": [
+				{
+					"Status code is 400": false
+				}
+			],
+			"time": "250",
+			"totalRequestTime": "250",
+			"iterationResults": {}
+		},
+		{
+			"name": "update primary email",
+			"id": "0aade13d-6008-4a9b-8a1c-c710dad2e2d6",
+			"url": "http://localhost:8080/v3/users/{{userId}}/email",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {
+				"error": {
+					"actual": 400,
+					"expected": 200,
+					"message": "expected response to have status code 200 but got 400",
+					"name": "AssertionError",
+					"showDiff": true,
+					"stack": "AssertionError: expected response to have status code 200 but got 400\n    at eval (eval at exec (evalmachine.<anonymous>:12494:2548), <anonymous>:5:25)\n    at Postman.n.test (evalmachine.<anonymous>:75:212)\n    at Object.eval (eval at exec (evalmachine.<anonymous>:12494:2548), <anonymous>:4:4)\n    at Uniscope.exec (evalmachine.<anonymous>:12494:2583)\n    at module.exports (evalmachine.<anonymous>:63:538)\n    at Object.<anonymous> (evalmachine.<anonymous>:66:1694)\n    at evalmachine.<anonymous>:16:26\n    at Array.forEach (<anonymous>)\n    at Object.emit (evalmachine.<anonymous>:15:54)\n    at evalmachine.<anonymous>:52:24"
+				},
+				"name": "Status code is 200",
+				"status": "fail"
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				"219"
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			],
+			"time": "219",
+			"totalRequestTime": "219",
+			"iterationResults": {}
+		},
+		{
+			"name": "update primary email already exist",
+			"id": "205b4d8f-ad79-4ba4-8b3b-6c59b9912e74",
+			"url": "http://localhost:8080/v3/users/{{userId}}/email",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {
+				"error": null,
+				"name": "Status code is 400",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"188"
+			],
+			"allTests": [
+				{
+					"Status code is 400": true
+				}
+			],
+			"time": "188",
+			"totalRequestTime": "188",
+			"iterationResults": {}
+		},
+		{
+			"name": "update status",
+			"id": "8b31a8e5-a4e2-45bc-bfd8-5052b0ee8623",
+			"url": "http://localhost:8080/v3/users/{{userId}}/status?comment=test",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {
+				"error": {
+					"actual": 400,
+					"expected": 200,
+					"message": "expected response to have status code 200 but got 400",
+					"name": "AssertionError",
+					"showDiff": true,
+					"stack": "AssertionError: expected response to have status code 200 but got 400\n    at eval (eval at exec (evalmachine.<anonymous>:12494:2548), <anonymous>:5:25)\n    at Postman.n.test (evalmachine.<anonymous>:75:212)\n    at Object.eval (eval at exec (evalmachine.<anonymous>:12494:2548), <anonymous>:4:4)\n    at Uniscope.exec (evalmachine.<anonymous>:12494:2583)\n    at module.exports (evalmachine.<anonymous>:63:538)\n    at Object.<anonymous> (evalmachine.<anonymous>:66:1694)\n    at evalmachine.<anonymous>:16:26\n    at Array.forEach (<anonymous>)\n    at Object.emit (evalmachine.<anonymous>:15:54)\n    at evalmachine.<anonymous>:52:24"
+				},
+				"name": "Status code is 200",
+				"status": "fail"
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				"201"
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			],
+			"time": "201",
+			"totalRequestTime": "201",
+			"iterationResults": {}
+		},
+		{
+			"name": "send activation code",
+			"id": "075a7161-d65e-4e0d-be77-d23da903f428",
+			"url": "http://localhost:8080/v3/users/{{userId}}/sendActivationCode",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {
+				"error": {
+					"actual": 400,
+					"expected": 200,
+					"message": "expected response to have status code 200 but got 400",
+					"name": "AssertionError",
+					"showDiff": true,
+					"stack": "AssertionError: expected response to have status code 200 but got 400\n    at eval (eval at exec (evalmachine.<anonymous>:12494:2548), <anonymous>:5:25)\n    at Postman.n.test (evalmachine.<anonymous>:75:212)\n    at Object.eval (eval at exec (evalmachine.<anonymous>:12494:2548), <anonymous>:4:4)\n    at Uniscope.exec (evalmachine.<anonymous>:12494:2583)\n    at module.exports (evalmachine.<anonymous>:63:538)\n    at Object.<anonymous> (evalmachine.<anonymous>:66:1694)\n    at evalmachine.<anonymous>:16:26\n    at Array.forEach (<anonymous>)\n    at Object.emit (evalmachine.<anonymous>:15:54)\n    at evalmachine.<anonymous>:52:24"
+				},
+				"name": "Status code is 200",
+				"status": "fail"
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				"205"
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			],
+			"time": "205",
+			"totalRequestTime": "205",
+			"iterationResults": {}
+		},
+		{
+			"name": "activate user",
+			"id": "cc0ab1cd-52cb-48dc-b8e2-61ea6925baee",
+			"url": "http://localhost:8080/v3/users/activate?code=13DVRL7QODV2",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {
+				"error": null,
+				"name": "Status code is 400",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"248"
+			],
+			"allTests": [
+				{
+					"Status code is 400": true
+				}
+			],
+			"time": "248",
+			"totalRequestTime": "248",
+			"iterationResults": {}
+		},
+		{
+			"name": "create user sso login record again",
+			"id": "3681f016-6b29-48a3-9e93-cced43595baa",
+			"url": "http://localhost:8080/v3/users/{{userId}}/SSOUserLogin",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"tests": {
+				"error": {
+					"actual": 404,
+					"expected": 200,
+					"message": "expected response to have status code 200 but got 404",
+					"name": "AssertionError",
+					"showDiff": true,
+					"stack": "AssertionError: expected response to have status code 200 but got 404\n    at eval (eval at exec (evalmachine.<anonymous>:12494:2548), <anonymous>:5:25)\n    at Postman.n.test (evalmachine.<anonymous>:75:212)\n    at Object.eval (eval at exec (evalmachine.<anonymous>:12494:2548), <anonymous>:4:4)\n    at Uniscope.exec (evalmachine.<anonymous>:12494:2583)\n    at module.exports (evalmachine.<anonymous>:63:538)\n    at Object.<anonymous> (evalmachine.<anonymous>:66:1694)\n    at evalmachine.<anonymous>:16:26\n    at Array.forEach (<anonymous>)\n    at Object.emit (evalmachine.<anonymous>:15:54)\n    at evalmachine.<anonymous>:52:24"
+				},
+				"name": "Status code is 200",
+				"status": "fail"
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				"177"
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			],
+			"time": "177",
+			"totalRequestTime": "177",
+			"iterationResults": {}
+		},
+		{
+			"name": "get user sso login records",
+			"id": "c747c54a-687a-458d-889c-43629c886150",
+			"url": "http://localhost:8080/v3/users/{{userId}}/SSOUserLogins",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"tests": {
+				"error": {
+					"actual": 404,
+					"expected": 200,
+					"message": "expected response to have status code 200 but got 404",
+					"name": "AssertionError",
+					"showDiff": true,
+					"stack": "AssertionError: expected response to have status code 200 but got 404\n    at eval (eval at exec (evalmachine.<anonymous>:12494:2548), <anonymous>:5:25)\n    at Postman.n.test (evalmachine.<anonymous>:75:212)\n    at Object.eval (eval at exec (evalmachine.<anonymous>:12494:2548), <anonymous>:4:4)\n    at Uniscope.exec (evalmachine.<anonymous>:12494:2583)\n    at module.exports (evalmachine.<anonymous>:63:538)\n    at Object.<anonymous> (evalmachine.<anonymous>:66:1694)\n    at evalmachine.<anonymous>:16:26\n    at Array.forEach (<anonymous>)\n    at Object.emit (evalmachine.<anonymous>:15:54)\n    at evalmachine.<anonymous>:52:24"
+				},
+				"name": "Status code is 200",
+				"status": "fail"
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				"186"
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			],
+			"time": "186",
+			"totalRequestTime": "186",
+			"iterationResults": {}
+		},
+		{
+			"name": "update user sso login record",
+			"id": "401f6bd3-529e-4398-a3dd-77aa96e6072e",
+			"url": "http://localhost:8080/v3/users/{{userId}}/SSOUserLogin",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"tests": {
+				"error": {
+					"actual": 404,
+					"expected": 200,
+					"message": "expected response to have status code 200 but got 404",
+					"name": "AssertionError",
+					"showDiff": true,
+					"stack": "AssertionError: expected response to have status code 200 but got 404\n    at eval (eval at exec (evalmachine.<anonymous>:12494:2548), <anonymous>:5:25)\n    at Postman.n.test (evalmachine.<anonymous>:75:212)\n    at Object.eval (eval at exec (evalmachine.<anonymous>:12494:2548), <anonymous>:4:4)\n    at Uniscope.exec (evalmachine.<anonymous>:12494:2583)\n    at module.exports (evalmachine.<anonymous>:63:538)\n    at Object.<anonymous> (evalmachine.<anonymous>:66:1694)\n    at evalmachine.<anonymous>:16:26\n    at Array.forEach (<anonymous>)\n    at Object.emit (evalmachine.<anonymous>:15:54)\n    at evalmachine.<anonymous>:52:24"
+				},
+				"name": "Status code is 200",
+				"status": "fail"
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				"272"
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			],
+			"time": "272",
+			"totalRequestTime": "272",
+			"iterationResults": {}
+		},
+		{
+			"name": "delete user sso login record by provider name",
+			"id": "2b74547b-0a22-405e-b8d8-4dfff1b7b556",
+			"url": "http://localhost:8080/v3/users/{{userId}}/SSOUserLogin?provider=test-provider",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"tests": {
+				"error": {
+					"actual": 404,
+					"expected": 200,
+					"message": "expected response to have status code 200 but got 404",
+					"name": "AssertionError",
+					"showDiff": true,
+					"stack": "AssertionError: expected response to have status code 200 but got 404\n    at eval (eval at exec (evalmachine.<anonymous>:12494:2548), <anonymous>:5:25)\n    at Postman.n.test (evalmachine.<anonymous>:75:212)\n    at Object.eval (eval at exec (evalmachine.<anonymous>:12494:2548), <anonymous>:4:4)\n    at Uniscope.exec (evalmachine.<anonymous>:12494:2583)\n    at module.exports (evalmachine.<anonymous>:63:538)\n    at Object.<anonymous> (evalmachine.<anonymous>:66:1694)\n    at evalmachine.<anonymous>:16:26\n    at Array.forEach (<anonymous>)\n    at Object.emit (evalmachine.<anonymous>:15:54)\n    at evalmachine.<anonymous>:52:24"
+				},
+				"name": "Status code is 200",
+				"status": "fail"
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				"184"
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			],
+			"time": "184",
+			"totalRequestTime": "184",
+			"iterationResults": {}
+		},
+		{
+			"name": "create  user sso login record (provider not exist)",
+			"id": "4c03b114-ae49-4fc2-b800-0b3e1ed425f8",
+			"url": "http://localhost:8080/v3/users/{{userId}}/SSOUserLogin",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"tests": {
+				"error": {
+					"actual": 404,
+					"expected": 400,
+					"message": "expected response to have status code 400 but got 404",
+					"name": "AssertionError",
+					"showDiff": true,
+					"stack": "AssertionError: expected response to have status code 400 but got 404\n    at eval (eval at exec (evalmachine.<anonymous>:12494:2548), <anonymous>:5:25)\n    at Postman.n.test (evalmachine.<anonymous>:75:212)\n    at Object.eval (eval at exec (evalmachine.<anonymous>:12494:2548), <anonymous>:4:4)\n    at Uniscope.exec (evalmachine.<anonymous>:12494:2583)\n    at module.exports (evalmachine.<anonymous>:63:538)\n    at Object.<anonymous> (evalmachine.<anonymous>:66:1694)\n    at evalmachine.<anonymous>:16:26\n    at Array.forEach (<anonymous>)\n    at Object.emit (evalmachine.<anonymous>:15:54)\n    at evalmachine.<anonymous>:52:24"
+				},
+				"name": "Status code is 400",
+				"status": "fail"
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				"168"
+			],
+			"allTests": [
+				{
+					"Status code is 400": false
+				}
+			],
+			"time": "168",
+			"totalRequestTime": "168",
+			"iterationResults": {}
+		},
+		{
+			"name": "create user sso login record(provider not present)",
+			"id": "9e5bc084-8f3e-42a8-ac6b-733fde88460d",
+			"url": "http://localhost:8080/v3/users/{{userId}}/SSOUserLogin",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"tests": {
+				"error": {
+					"actual": 404,
+					"expected": 400,
+					"message": "expected response to have status code 400 but got 404",
+					"name": "AssertionError",
+					"showDiff": true,
+					"stack": "AssertionError: expected response to have status code 400 but got 404\n    at eval (eval at exec (evalmachine.<anonymous>:12494:2548), <anonymous>:5:25)\n    at Postman.n.test (evalmachine.<anonymous>:75:212)\n    at Object.eval (eval at exec (evalmachine.<anonymous>:12494:2548), <anonymous>:4:4)\n    at Uniscope.exec (evalmachine.<anonymous>:12494:2583)\n    at module.exports (evalmachine.<anonymous>:63:538)\n    at Object.<anonymous> (evalmachine.<anonymous>:66:1694)\n    at evalmachine.<anonymous>:16:26\n    at Array.forEach (<anonymous>)\n    at Object.emit (evalmachine.<anonymous>:15:54)\n    at evalmachine.<anonymous>:52:24"
+				},
+				"name": "Status code is 400",
+				"status": "fail"
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				"200"
+			],
+			"allTests": [
+				{
+					"Status code is 400": false
+				}
+			],
+			"time": "200",
+			"totalRequestTime": "200",
+			"iterationResults": {}
+		},
+		{
+			"name": "get all users",
+			"id": "f903f8d3-59ce-4554-a2bb-51895015abea",
+			"url": "http://localhost:8080/v3/users",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"error": null,
+				"name": "Status code is 200",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"527"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "527",
+			"totalRequestTime": "527",
+			"iterationResults": {}
+		},
+		{
+			"name": "get achivements",
+			"id": "df770182-6bc4-4747-9784-4a75270c4651",
+			"url": "http://localhost:8080/v3/users/{{userId}}/achievements",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {
+				"error": {
+					"actual": 400,
+					"expected": 200,
+					"message": "expected response to have status code 200 but got 400",
+					"name": "AssertionError",
+					"showDiff": true,
+					"stack": "AssertionError: expected response to have status code 200 but got 400\n    at eval (eval at exec (evalmachine.<anonymous>:12494:2548), <anonymous>:5:25)\n    at Postman.n.test (evalmachine.<anonymous>:75:212)\n    at Object.eval (eval at exec (evalmachine.<anonymous>:12494:2548), <anonymous>:4:4)\n    at Uniscope.exec (evalmachine.<anonymous>:12494:2583)\n    at module.exports (evalmachine.<anonymous>:63:538)\n    at Object.<anonymous> (evalmachine.<anonymous>:66:1694)\n    at evalmachine.<anonymous>:16:26\n    at Array.forEach (<anonymous>)\n    at Object.emit (evalmachine.<anonymous>:15:54)\n    at evalmachine.<anonymous>:52:24"
+				},
+				"name": "Status code is 200",
+				"status": "fail"
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				"210"
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			],
+			"time": "210",
+			"totalRequestTime": "210",
+			"iterationResults": {}
+		},
+		{
+			"name": "validate handle not valid",
+			"id": "10665796-80f3-43d0-ba1d-0e38316df738",
+			"url": "http://localhost:8080/v3/users/validateHandle?handle=heffan",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"error": null,
+				"name": "Status code is 200",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"358"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "358",
+			"totalRequestTime": "358",
+			"iterationResults": {}
+		},
+		{
+			"name": "validate handle valid",
+			"id": "89991db4-8419-4ab9-b0f1-d9289130d44d",
+			"url": "http://localhost:8080/v3/users/validateHandle?handle=heffan123123",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"error": null,
+				"name": "Status code is 200",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"286"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "286",
+			"totalRequestTime": "286",
+			"iterationResults": {}
+		},
+		{
+			"name": "validate email not valid",
+			"id": "5398d9b6-814d-4b02-99a6-8b3a5231cc14",
+			"url": "http://localhost:8080/v3/users/validateEmail?email=foo@fooonyou.com",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"error": null,
+				"name": "Status code is 200",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"207"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "207",
+			"totalRequestTime": "207",
+			"iterationResults": {}
+		},
+		{
+			"name": "validate email valid",
+			"id": "1fdcaf94-86c4-42db-bd91-4f427e3cf7bd",
+			"url": "http://localhost:8080/v3/users/validateEmail?email=foo12331@fooonyou.com",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"error": null,
+				"name": "Status code is 200",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"356"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "356",
+			"totalRequestTime": "356",
+			"iterationResults": {}
+		},
+		{
+			"name": "validate social valid",
+			"id": "610ed37f-40a8-4df9-9ffe-4bcc919e588e",
+			"url": "http://localhost:8080/v3/users/validateSocial?socialUserId=1&socialProvider=sfdc",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"error": null,
+				"name": "Status code is 200",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"252"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "252",
+			"totalRequestTime": "252",
+			"iterationResults": {}
+		},
+		{
+			"name": "validate social provider not supported",
+			"id": "47dd7d07-9a68-4bb7-8cd2-a54b8a3e0549",
+			"url": "http://localhost:8080/v3/users/validateSocial?socialUserId=1&socialProvider=sfdc1",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {
+				"error": null,
+				"name": "Status code is 400",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"166"
+			],
+			"allTests": [
+				{
+					"Status code is 400": true
+				}
+			],
+			"time": "166",
+			"totalRequestTime": "166",
+			"iterationResults": {}
+		},
+		{
+			"name": "get users with limit and offset",
+			"id": "3837a90c-e690-45de-994a-6663bc6cf651",
+			"url": "http://localhost:8080/v3/users?limit=10&offset=2",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"error": null,
+				"name": "Status code is 200",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"287"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "287",
+			"totalRequestTime": "287",
+			"iterationResults": {}
+		},
+		{
+			"name": "get users by email filter",
+			"id": "353b9690-463f-46b1-8802-2e1501dfb005",
+			"url": "http://localhost:8080/v3/users?filter=email=foo@fooonyou.com",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"error": null,
+				"name": "Status code is 200",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"497"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "497",
+			"totalRequestTime": "497",
+			"iterationResults": {}
+		},
+		{
+			"name": "get user with provider info",
+			"id": "4fae2e8c-79fe-4b4f-8431-1668ad469bff",
+			"url": "http://localhost:8080/v3/users/{{userId}}",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {
+				"error": {
+					"actual": 400,
+					"expected": 200,
+					"message": "expected response to have status code 200 but got 400",
+					"name": "AssertionError",
+					"showDiff": true,
+					"stack": "AssertionError: expected response to have status code 200 but got 400\n    at eval (eval at exec (evalmachine.<anonymous>:12494:2548), <anonymous>:5:25)\n    at Postman.n.test (evalmachine.<anonymous>:75:212)\n    at Object.eval (eval at exec (evalmachine.<anonymous>:12494:2548), <anonymous>:4:4)\n    at Uniscope.exec (evalmachine.<anonymous>:12494:2583)\n    at module.exports (evalmachine.<anonymous>:63:538)\n    at Object.<anonymous> (evalmachine.<anonymous>:66:1694)\n    at evalmachine.<anonymous>:16:26\n    at Array.forEach (<anonymous>)\n    at Object.emit (evalmachine.<anonymous>:15:54)\n    at evalmachine.<anonymous>:52:24"
+				},
+				"name": "Status code is 200",
+				"status": "fail"
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				"244"
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			],
+			"time": "244",
+			"totalRequestTime": "244",
+			"iterationResults": {}
+		},
+		{
+			"name": "get all providers",
+			"id": "72d2a2fb-1687-4dca-933e-00caa9ec6a7e",
+			"url": "http://localhost:8080/v3/ssoLoginProviders",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"error": null,
+				"name": "Status code is 200",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"244"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "244",
+			"totalRequestTime": "244",
+			"iterationResults": {}
+		},
+		{
+			"name": "get provider info",
+			"id": "375801e3-cf84-458b-aae6-126aab0e709a",
+			"url": "http://localhost:8080/v3/identityproviders?filter=handle=heffan",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"error": null,
+				"name": "Status code is 200",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"242"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "242",
+			"totalRequestTime": "242",
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 16,
+	"totalFail": 18,
+	"totalTime": 9954,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "create user record",
+			"id": "634b4587-12e0-44e2-9248-9ec3758612f7",
+			"url": "http://localhost:8080/v3/users",
+			"time": "2019-12-05T16:14:48.335Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			}
+		},
+		{
+			"name": "create user record handle already exist",
+			"id": "10df190f-5a99-4dc5-9e8d-091c6287a4e5",
+			"url": "http://localhost:8080/v3/users",
+			"time": "2019-12-05T16:14:48.335Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "create user record email already exist",
+			"id": "6ac28fc1-b40b-428f-976d-f11ce43ffa69",
+			"url": "http://localhost:8080/v3/users",
+			"time": "2019-12-05T16:14:48.335Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "create user sso login record",
+			"id": "f9ed9f8f-3fcd-4165-8bc9-7af956730675",
+			"url": "http://localhost:8080/v3/users/{{userId}}/SSOUserLogin",
+			"time": "2019-12-05T16:14:48.335Z",
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			}
+		},
+		{
+			"name": "delete user sso login record by provider id",
+			"id": "dd197e8e-afc6-49fc-9627-9f81a7e8e3fb",
+			"url": "http://localhost:8080/v3/users/{{userId}}/SSOUserLogin?providerId=1",
+			"time": "2019-12-05T16:14:48.335Z",
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			}
+		},
+		{
+			"name": "delete user sso login record by provider id not exist",
+			"id": "4a18c9a4-c534-44b2-ba37-5f38b07016e2",
+			"url": "http://localhost:8080/v3/users/132456/SSOUserLogin?providerId=1",
+			"time": "2019-12-05T16:14:48.335Z",
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "update user record - name",
+			"id": "6861dca3-b043-4618-8a6b-71663d9fa345",
+			"url": "http://localhost:8080/v3/users/{{userId}}",
+			"time": "2019-12-05T16:14:48.335Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			}
+		},
+		{
+			"name": "update user record - password",
+			"id": "ae851d8b-2fe1-42d0-a4dd-4039263a1737",
+			"url": "http://localhost:8080/v3/users/{{userId}}",
+			"time": "2019-12-05T16:14:48.335Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			}
+		},
+		{
+			"name": "update handle",
+			"id": "e8a325d7-521a-4528-aa3d-3c563fb21e73",
+			"url": "http://localhost:8080/v3/users/{{userId}}/handle",
+			"time": "2019-12-05T16:14:48.335Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			}
+		},
+		{
+			"name": "update handle already exist",
+			"id": "b902496d-c2ca-41bf-9b10-a403536cb304",
+			"url": "http://localhost:8080/v3/users/{{userId}}/handle",
+			"time": "2019-12-05T16:14:48.335Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 0,
+					"fail": 1
+				}
+			}
+		},
+		{
+			"name": "update primary email",
+			"id": "0aade13d-6008-4a9b-8a1c-c710dad2e2d6",
+			"url": "http://localhost:8080/v3/users/{{userId}}/email",
+			"time": "2019-12-05T16:14:48.335Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			}
+		},
+		{
+			"name": "update primary email already exist",
+			"id": "205b4d8f-ad79-4ba4-8b3b-6c59b9912e74",
+			"url": "http://localhost:8080/v3/users/{{userId}}/email",
+			"time": "2019-12-05T16:14:48.335Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "update status",
+			"id": "8b31a8e5-a4e2-45bc-bfd8-5052b0ee8623",
+			"url": "http://localhost:8080/v3/users/{{userId}}/status?comment=test",
+			"time": "2019-12-05T16:14:48.335Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			}
+		},
+		{
+			"name": "send activation code",
+			"id": "075a7161-d65e-4e0d-be77-d23da903f428",
+			"url": "http://localhost:8080/v3/users/{{userId}}/sendActivationCode",
+			"time": "2019-12-05T16:14:48.335Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			}
+		},
+		{
+			"name": "activate user",
+			"id": "cc0ab1cd-52cb-48dc-b8e2-61ea6925baee",
+			"url": "http://localhost:8080/v3/users/activate?code=13DVRL7QODV2",
+			"time": "2019-12-05T16:14:48.335Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "create user sso login record again",
+			"id": "3681f016-6b29-48a3-9e93-cced43595baa",
+			"url": "http://localhost:8080/v3/users/{{userId}}/SSOUserLogin",
+			"time": "2019-12-05T16:14:48.335Z",
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			}
+		},
+		{
+			"name": "get user sso login records",
+			"id": "c747c54a-687a-458d-889c-43629c886150",
+			"url": "http://localhost:8080/v3/users/{{userId}}/SSOUserLogins",
+			"time": "2019-12-05T16:14:48.335Z",
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			}
+		},
+		{
+			"name": "update user sso login record",
+			"id": "401f6bd3-529e-4398-a3dd-77aa96e6072e",
+			"url": "http://localhost:8080/v3/users/{{userId}}/SSOUserLogin",
+			"time": "2019-12-05T16:14:48.335Z",
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			}
+		},
+		{
+			"name": "delete user sso login record by provider name",
+			"id": "2b74547b-0a22-405e-b8d8-4dfff1b7b556",
+			"url": "http://localhost:8080/v3/users/{{userId}}/SSOUserLogin?provider=test-provider",
+			"time": "2019-12-05T16:14:48.335Z",
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			}
+		},
+		{
+			"name": "create  user sso login record (provider not exist)",
+			"id": "4c03b114-ae49-4fc2-b800-0b3e1ed425f8",
+			"url": "http://localhost:8080/v3/users/{{userId}}/SSOUserLogin",
+			"time": "2019-12-05T16:14:48.335Z",
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 0,
+					"fail": 1
+				}
+			}
+		},
+		{
+			"name": "create user sso login record(provider not present)",
+			"id": "9e5bc084-8f3e-42a8-ac6b-733fde88460d",
+			"url": "http://localhost:8080/v3/users/{{userId}}/SSOUserLogin",
+			"time": "2019-12-05T16:14:48.335Z",
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 0,
+					"fail": 1
+				}
+			}
+		},
+		{
+			"name": "get all users",
+			"id": "f903f8d3-59ce-4554-a2bb-51895015abea",
+			"url": "http://localhost:8080/v3/users",
+			"time": "2019-12-05T16:14:48.335Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "get achivements",
+			"id": "df770182-6bc4-4747-9784-4a75270c4651",
+			"url": "http://localhost:8080/v3/users/{{userId}}/achievements",
+			"time": "2019-12-05T16:14:48.335Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			}
+		},
+		{
+			"name": "validate handle not valid",
+			"id": "10665796-80f3-43d0-ba1d-0e38316df738",
+			"url": "http://localhost:8080/v3/users/validateHandle?handle=heffan",
+			"time": "2019-12-05T16:14:48.335Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "validate handle valid",
+			"id": "89991db4-8419-4ab9-b0f1-d9289130d44d",
+			"url": "http://localhost:8080/v3/users/validateHandle?handle=heffan123123",
+			"time": "2019-12-05T16:14:48.335Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "validate email not valid",
+			"id": "5398d9b6-814d-4b02-99a6-8b3a5231cc14",
+			"url": "http://localhost:8080/v3/users/validateEmail?email=foo@fooonyou.com",
+			"time": "2019-12-05T16:14:48.335Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "validate email valid",
+			"id": "1fdcaf94-86c4-42db-bd91-4f427e3cf7bd",
+			"url": "http://localhost:8080/v3/users/validateEmail?email=foo12331@fooonyou.com",
+			"time": "2019-12-05T16:14:48.335Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "validate social valid",
+			"id": "610ed37f-40a8-4df9-9ffe-4bcc919e588e",
+			"url": "http://localhost:8080/v3/users/validateSocial?socialUserId=1&socialProvider=sfdc",
+			"time": "2019-12-05T16:14:48.335Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "validate social provider not supported",
+			"id": "47dd7d07-9a68-4bb7-8cd2-a54b8a3e0549",
+			"url": "http://localhost:8080/v3/users/validateSocial?socialUserId=1&socialProvider=sfdc1",
+			"time": "2019-12-05T16:14:48.335Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "get users with limit and offset",
+			"id": "3837a90c-e690-45de-994a-6663bc6cf651",
+			"url": "http://localhost:8080/v3/users?limit=10&offset=2",
+			"time": "2019-12-05T16:14:48.335Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "get users by email filter",
+			"id": "353b9690-463f-46b1-8802-2e1501dfb005",
+			"url": "http://localhost:8080/v3/users?filter=email=foo@fooonyou.com",
+			"time": "2019-12-05T16:14:48.335Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "get user with provider info",
+			"id": "4fae2e8c-79fe-4b4f-8431-1668ad469bff",
+			"url": "http://localhost:8080/v3/users/{{userId}}",
+			"time": "2019-12-05T16:14:48.335Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			}
+		},
+		{
+			"name": "get all providers",
+			"id": "72d2a2fb-1687-4dca-933e-00caa9ec6a7e",
+			"url": "http://localhost:8080/v3/ssoLoginProviders",
+			"time": "2019-12-05T16:14:48.335Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "get provider info",
+			"id": "375801e3-cf84-458b-aae6-126aab0e709a",
+			"url": "http://localhost:8080/v3/identityproviders?filter=handle=heffan",
+			"time": "2019-12-05T16:14:48.335Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		}
+	],
+	"synced": false
+}
