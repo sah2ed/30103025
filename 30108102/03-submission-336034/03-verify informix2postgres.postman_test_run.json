@@ -1,0 +1,478 @@
+{
+	"id": "4cf0b6a0-66ac-481f-9135-376857d85a3e",
+	"name": "verify informix2postgres",
+	"allTests": [],
+	"timestamp": "2019-12-06T10:43:48.913Z",
+	"collection_id": "b57df0c8-5d13-4ce0-9206-476dad396fce",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "0",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "b57df0c8-5d13-4ce0-9206-476dad396fce",
+		"name": "verify informix2postgres",
+		"description": null,
+		"auth": null,
+		"events": null,
+		"variables": null,
+		"order": [
+			"ce792e1a-15f1-4a5c-a58c-d0b7dd409d3d",
+			"3ee2115f-1a61-41dd-99f5-80124d2de061",
+			"bf323394-4a12-4da2-9bb5-e1585f85d6f7",
+			"2e341076-4ec2-4068-bfa6-a92c2205b9e1",
+			"08559421-477d-4fae-8386-8f88650cacc8"
+		],
+		"folders_order": [
+			"153cffc4-d9ae-420d-80da-48f796794f7e"
+		],
+		"owner": "0",
+		"permissions": {},
+		"favorite": false,
+		"shared": false,
+		"type": "collection",
+		"depth": 0
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [],
+	"results": [
+		{
+			"name": "SSOUserDAO",
+			"id": "15ac2d7f-6fd0-4424-a1ba-aeb998aba7a7",
+			"url": "http://local.topcoder-dev.com:8080/v3/users/1111/SSOUserLogin",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {},
+			"times": [
+				"363"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "363",
+			"totalRequestTime": "363",
+			"iterationResults": {}
+		},
+		{
+			"name": "getSSOProviderByUserId",
+			"id": "995d82e6-fbc2-4100-95a9-0955449bdd93",
+			"url": "http://local.topcoder-dev.com:8080/v3/identityproviders?filter=handle=externalUserId",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {},
+			"times": [
+				"166"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "166",
+			"totalRequestTime": "166",
+			"iterationResults": {}
+		},
+		{
+			"name": "getSSOProviderByEmail",
+			"id": "9477844e-5d11-4f2a-87a3-abd59ec8729f",
+			"url": "http://local.topcoder-dev.com:8080/v3/identityproviders?filter=handle=heffan@tc.com",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {},
+			"times": [
+				"234"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "234",
+			"totalRequestTime": "234",
+			"iterationResults": {}
+		},
+		{
+			"name": "getSSOProviderByHandle",
+			"id": "28dafeaa-9856-462c-b774-a799905378dc",
+			"url": "http://local.topcoder-dev.com:8080/v3/identityproviders?filter=handle=heffan",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {},
+			"times": [
+				"180"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "180",
+			"totalRequestTime": "180",
+			"iterationResults": {}
+		},
+		{
+			"name": "getSocialProviderByUserId",
+			"id": "6b5cc11f-a179-4aa4-abf7-227894c10ea1",
+			"url": "http://local.topcoder-dev.com:8080/v3/identityproviders?filter=handle=github_heffan",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {},
+			"times": [
+				"199"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "199",
+			"totalRequestTime": "199",
+			"iterationResults": {}
+		},
+		{
+			"name": "getSocialProviderByUserEmail",
+			"id": "92d9b5d1-4080-4a84-86af-12cce7c2407f",
+			"url": "http://local.topcoder-dev.com:8080/v3/identityproviders?filter=email=heffan_github@tc.com",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {},
+			"times": [
+				"185"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "185",
+			"totalRequestTime": "185",
+			"iterationResults": {}
+		},
+		{
+			"name": "getAllProviders",
+			"id": "ce792e1a-15f1-4a5c-a58c-d0b7dd409d3d",
+			"url": "http://local.topcoder-dev.com:8080/v3/ssoLoginProviders",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {},
+			"times": [
+				"166"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "166",
+			"totalRequestTime": "166",
+			"iterationResults": {}
+		},
+		{
+			"name": "createGroup",
+			"id": "3ee2115f-1a61-41dd-99f5-80124d2de061",
+			"url": "http://local.topcoder-dev.com:8080/v3/groups/securityGroups",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {},
+			"times": [
+				"215"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "215",
+			"totalRequestTime": "215",
+			"iterationResults": {}
+		},
+		{
+			"name": "findGroupById",
+			"id": "bf323394-4a12-4da2-9bb5-e1585f85d6f7",
+			"url": "http://local.topcoder-dev.com:8080/v3/groups/securityGroups",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {},
+			"times": [
+				"196"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "196",
+			"totalRequestTime": "196",
+			"iterationResults": {}
+		},
+		{
+			"name": "findGroupByName",
+			"id": "2e341076-4ec2-4068-bfa6-a92c2205b9e1",
+			"url": "http://local.topcoder-dev.com:8080/v3/groups/securityGroups",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {},
+			"times": [
+				"182"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "182",
+			"totalRequestTime": "182",
+			"iterationResults": {}
+		},
+		{
+			"name": "userDAO",
+			"id": "08559421-477d-4fae-8386-8f88650cacc8",
+			"url": "http://local.topcoder-dev.com:8080/v3/users",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {},
+			"times": [
+				"217"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "217",
+			"totalRequestTime": "217",
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 0,
+	"totalFail": 0,
+	"totalTime": 2303,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "SSOUserDAO",
+			"id": "15ac2d7f-6fd0-4424-a1ba-aeb998aba7a7",
+			"url": "http://local.topcoder-dev.com:8080/v3/users/1111/SSOUserLogin",
+			"time": "2019-12-06T10:43:48.913Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "getSSOProviderByUserId",
+			"id": "995d82e6-fbc2-4100-95a9-0955449bdd93",
+			"url": "http://local.topcoder-dev.com:8080/v3/identityproviders?filter=handle=externalUserId",
+			"time": "2019-12-06T10:43:48.913Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "getSSOProviderByEmail",
+			"id": "9477844e-5d11-4f2a-87a3-abd59ec8729f",
+			"url": "http://local.topcoder-dev.com:8080/v3/identityproviders?filter=handle=heffan@tc.com",
+			"time": "2019-12-06T10:43:48.913Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "getSSOProviderByHandle",
+			"id": "28dafeaa-9856-462c-b774-a799905378dc",
+			"url": "http://local.topcoder-dev.com:8080/v3/identityproviders?filter=handle=heffan",
+			"time": "2019-12-06T10:43:48.913Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "getSocialProviderByUserId",
+			"id": "6b5cc11f-a179-4aa4-abf7-227894c10ea1",
+			"url": "http://local.topcoder-dev.com:8080/v3/identityproviders?filter=handle=github_heffan",
+			"time": "2019-12-06T10:43:48.913Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "getSocialProviderByUserEmail",
+			"id": "92d9b5d1-4080-4a84-86af-12cce7c2407f",
+			"url": "http://local.topcoder-dev.com:8080/v3/identityproviders?filter=email=heffan_github@tc.com",
+			"time": "2019-12-06T10:43:48.913Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "getAllProviders",
+			"id": "ce792e1a-15f1-4a5c-a58c-d0b7dd409d3d",
+			"url": "http://local.topcoder-dev.com:8080/v3/ssoLoginProviders",
+			"time": "2019-12-06T10:43:48.913Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "createGroup",
+			"id": "3ee2115f-1a61-41dd-99f5-80124d2de061",
+			"url": "http://local.topcoder-dev.com:8080/v3/groups/securityGroups",
+			"time": "2019-12-06T10:43:48.913Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "findGroupById",
+			"id": "bf323394-4a12-4da2-9bb5-e1585f85d6f7",
+			"url": "http://local.topcoder-dev.com:8080/v3/groups/securityGroups",
+			"time": "2019-12-06T10:43:48.913Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "findGroupByName",
+			"id": "2e341076-4ec2-4068-bfa6-a92c2205b9e1",
+			"url": "http://local.topcoder-dev.com:8080/v3/groups/securityGroups",
+			"time": "2019-12-06T10:43:48.913Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "userDAO",
+			"id": "08559421-477d-4fae-8386-8f88650cacc8",
+			"url": "http://local.topcoder-dev.com:8080/v3/users",
+			"time": "2019-12-06T10:43:48.913Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {}
+		}
+	],
+	"synced": false
+}
