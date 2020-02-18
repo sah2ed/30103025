@@ -1,0 +1,1117 @@
+{
+	"id": "2f9e1faa-d459-454b-805d-8f99c6b4c748",
+	"name": "member-api",
+	"allTests": [],
+	"timestamp": "2020-02-18T16:08:46.366Z",
+	"collection_id": "53435261-0fc3-45d2-84f8-0fd2ad65f1ca",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "6c015473-62fd-4a86-be8c-b2d98bbd3a21",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "53435261-0fc3-45d2-84f8-0fd2ad65f1ca",
+		"name": "member-api",
+		"description": null,
+		"auth": null,
+		"events": [
+			{
+				"listen": "prerequest",
+				"script": {
+					"id": "053175cf-60bc-4840-a318-b5a395c451c9",
+					"type": "text/javascript",
+					"exec": [
+						""
+					]
+				}
+			},
+			{
+				"listen": "test",
+				"script": {
+					"id": "b9784964-418a-4359-b81d-690cc3fcdaa4",
+					"type": "text/javascript",
+					"exec": [
+						""
+					]
+				}
+			}
+		],
+		"variables": null,
+		"order": [],
+		"folders_order": [
+			"13d8cfce-54ac-44d7-8ab6-07eb6f5a1bb7",
+			"ea8690b6-39d8-4c8b-a5e5-04743e669e74"
+		],
+		"owner": "0",
+		"permissions": {},
+		"favorite": false,
+		"shared": false,
+		"type": "collection",
+		"depth": 0
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [],
+	"results": [
+		{
+			"name": "get member 1",
+			"id": "d0435911-ef61-4d56-a10e-25a35cb69fe8",
+			"url": "http://localhost:3000/v5/members/denis",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Status code is 200",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"627"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "627",
+			"totalRequestTime": "627",
+			"iterationResults": {}
+		},
+		{
+			"name": "get member 2",
+			"id": "6617826d-b3ec-4898-a175-c9698261b191",
+			"url": "http://localhost:3000/v5/members/testing",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Status code is 200",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"339"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "339",
+			"totalRequestTime": "339",
+			"iterationResults": {}
+		},
+		{
+			"name": "get member - not found 404",
+			"id": "f4e5bd0e-44b5-4660-8386-cdd2c5183efd",
+			"url": "http://localhost:3000/v5/members/notfound",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"tests": {
+				"name": "Status code is 404",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"429"
+			],
+			"allTests": [
+				{
+					"Status code is 404": true
+				}
+			],
+			"time": "429",
+			"totalRequestTime": "429",
+			"iterationResults": {}
+		},
+		{
+			"name": "get member - forbidden M2M token 403",
+			"id": "2632e584-5f6d-4b36-879b-7d49d1d859d4",
+			"url": "http://localhost:3000/v5/members/denis",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"tests": {
+				"name": "Status code is 403",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"373"
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			],
+			"time": "373",
+			"totalRequestTime": "373",
+			"iterationResults": {}
+		},
+		{
+			"name": "verify email 1",
+			"id": "c13561ed-1188-439b-a848-723e1bfa3e1c",
+			"url": "http://localhost:3000/v5/members/denis/verify?token=abcdefg",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Status code is 200",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"867"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "867",
+			"totalRequestTime": "867",
+			"iterationResults": {}
+		},
+		{
+			"name": "verify email 2",
+			"id": "514e53d7-83da-4d23-bfb3-e58a863c5c49",
+			"url": "http://localhost:3000/v5/members/denis/verify?token=abc123123",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Status code is 200",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"865"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "865",
+			"totalRequestTime": "865",
+			"iterationResults": {}
+		},
+		{
+			"name": "verify email - wrong verify token 400",
+			"id": "161cb458-85be-41a5-96f9-7bbd05622e18",
+			"url": "http://localhost:3000/v5/members/denis/verify?token=wrong",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {
+				"name": "Status code is 400",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"282"
+			],
+			"allTests": [
+				{
+					"Status code is 400": true
+				}
+			],
+			"time": "282",
+			"totalRequestTime": "282",
+			"iterationResults": {}
+		},
+		{
+			"name": "verify email - forbidden 403",
+			"id": "eb39fec2-56f9-49ca-82d3-0c89ee1e1f32",
+			"url": "http://localhost:3000/v5/members/denis/verify?token=abc123123",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"tests": {
+				"name": "Status code is 403",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"273"
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			],
+			"time": "273",
+			"totalRequestTime": "273",
+			"iterationResults": {}
+		},
+		{
+			"name": "verify email - invalid auth token 401",
+			"id": "fe1ad2a9-6369-44b8-9da8-623cf3de7728",
+			"url": "http://localhost:3000/v5/members/denis/verify?token=abc123123",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized",
+				"detail": {
+					"name": "Unauthorized",
+					"detail": "Similar to 403 Forbidden, but specifically for use when authentication is possible but has failed or not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource."
+				}
+			},
+			"tests": {
+				"name": "Status code is 401",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 401": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"158"
+			],
+			"allTests": [
+				{
+					"Status code is 401": true
+				}
+			],
+			"time": "158",
+			"totalRequestTime": "158",
+			"iterationResults": {}
+		},
+		{
+			"name": "verify email - expired auth token 401",
+			"id": "48049fb7-a1fb-4e30-b183-39b4f212e84c",
+			"url": "http://localhost:3000/v5/members/denis/verify?token=abc123123",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized",
+				"detail": {
+					"name": "Unauthorized",
+					"detail": "Similar to 403 Forbidden, but specifically for use when authentication is possible but has failed or not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource."
+				}
+			},
+			"tests": {
+				"name": "Status code is 401",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 401": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"171"
+			],
+			"allTests": [
+				{
+					"Status code is 401": true
+				}
+			],
+			"time": "171",
+			"totalRequestTime": "171",
+			"iterationResults": {}
+		},
+		{
+			"name": "verify email - missing verify token 400",
+			"id": "7c698d6b-e2ea-43e2-8a14-14f42dab2d7e",
+			"url": "http://localhost:3000/v5/members/denis/verify",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {
+				"name": "Status code is 400",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"180"
+			],
+			"allTests": [
+				{
+					"Status code is 400": true
+				}
+			],
+			"time": "180",
+			"totalRequestTime": "180",
+			"iterationResults": {}
+		},
+		{
+			"name": "verify email - not found 404",
+			"id": "7e4da3a5-72dc-49c7-9aa6-60581c32e0a4",
+			"url": "http://localhost:3000/v5/members/other/verify?token=abc123123",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"tests": {
+				"name": "Status code is 404",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"206"
+			],
+			"allTests": [
+				{
+					"Status code is 404": true
+				}
+			],
+			"time": "206",
+			"totalRequestTime": "206",
+			"iterationResults": {}
+		},
+		{
+			"name": "update member 1",
+			"id": "4bf6360d-0ea3-4d98-a2c0-8812c0a2f04f",
+			"url": "http://localhost:3000/v5/members/testing",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Status code is 200",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"618"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "618",
+			"totalRequestTime": "618",
+			"iterationResults": {}
+		},
+		{
+			"name": "update member 2",
+			"id": "b55c348f-8e71-4051-8dab-024f7c6bdf15",
+			"url": "http://localhost:3000/v5/members/testing?verifyUrl=http://test.com/abc",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Status code is 200",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"952"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "952",
+			"totalRequestTime": "952",
+			"iterationResults": {}
+		},
+		{
+			"name": "update member - unexpected field 400",
+			"id": "0e5b244c-eda2-4662-9c83-06cb0b691e58",
+			"url": "http://localhost:3000/v5/members/testing?verifyUrl=http://test.com/abc",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {
+				"name": "Status code is 400",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"276"
+			],
+			"allTests": [
+				{
+					"Status code is 400": true
+				}
+			],
+			"time": "276",
+			"totalRequestTime": "276",
+			"iterationResults": {}
+		},
+		{
+			"name": "update member - invalid email 400",
+			"id": "eb6605d6-631a-4ae7-8cb7-48dce670c5cd",
+			"url": "http://localhost:3000/v5/members/testing?verifyUrl=http://test.com/abc",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {
+				"name": "Status code is 400",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"174"
+			],
+			"allTests": [
+				{
+					"Status code is 400": true
+				}
+			],
+			"time": "174",
+			"totalRequestTime": "174",
+			"iterationResults": {}
+		},
+		{
+			"name": "update member - invalid verifyUrl 400",
+			"id": "2521cd83-6791-49b2-8be2-c6cf88f86ae5",
+			"url": "http://localhost:3000/v5/members/testing?verifyUrl=abc",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {
+				"name": "Status code is 400",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"218"
+			],
+			"allTests": [
+				{
+					"Status code is 400": true
+				}
+			],
+			"time": "218",
+			"totalRequestTime": "218",
+			"iterationResults": {}
+		},
+		{
+			"name": "update member - not found 404",
+			"id": "647ca222-14b1-41b2-b00d-475c91e83e75",
+			"url": "http://localhost:3000/v5/members/other?verifyUrl=http://test.com/abc",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"tests": {
+				"name": "Status code is 404",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"363"
+			],
+			"allTests": [
+				{
+					"Status code is 404": true
+				}
+			],
+			"time": "363",
+			"totalRequestTime": "363",
+			"iterationResults": {}
+		},
+		{
+			"name": "update member - forbidden 403",
+			"id": "cf21930a-e00e-4019-a393-703a9252187f",
+			"url": "http://localhost:3000/v5/members/testing",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"tests": {
+				"name": "Status code is 403",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"298"
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			],
+			"time": "298",
+			"totalRequestTime": "298",
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 19,
+	"totalFail": 0,
+	"totalTime": 7669,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "get member 1",
+			"id": "d0435911-ef61-4d56-a10e-25a35cb69fe8",
+			"url": "http://localhost:3000/v5/members/denis",
+			"time": "2020-02-18T16:08:46.366Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "get member 2",
+			"id": "6617826d-b3ec-4898-a175-c9698261b191",
+			"url": "http://localhost:3000/v5/members/testing",
+			"time": "2020-02-18T16:08:46.366Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "get member - not found 404",
+			"id": "f4e5bd0e-44b5-4660-8386-cdd2c5183efd",
+			"url": "http://localhost:3000/v5/members/notfound",
+			"time": "2020-02-18T16:08:46.366Z",
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "get member - forbidden M2M token 403",
+			"id": "2632e584-5f6d-4b36-879b-7d49d1d859d4",
+			"url": "http://localhost:3000/v5/members/denis",
+			"time": "2020-02-18T16:08:46.366Z",
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "verify email 1",
+			"id": "c13561ed-1188-439b-a848-723e1bfa3e1c",
+			"url": "http://localhost:3000/v5/members/denis/verify?token=abcdefg",
+			"time": "2020-02-18T16:08:46.366Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "verify email 2",
+			"id": "514e53d7-83da-4d23-bfb3-e58a863c5c49",
+			"url": "http://localhost:3000/v5/members/denis/verify?token=abc123123",
+			"time": "2020-02-18T16:08:46.366Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "verify email - wrong verify token 400",
+			"id": "161cb458-85be-41a5-96f9-7bbd05622e18",
+			"url": "http://localhost:3000/v5/members/denis/verify?token=wrong",
+			"time": "2020-02-18T16:08:46.366Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "verify email - forbidden 403",
+			"id": "eb39fec2-56f9-49ca-82d3-0c89ee1e1f32",
+			"url": "http://localhost:3000/v5/members/denis/verify?token=abc123123",
+			"time": "2020-02-18T16:08:46.366Z",
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "verify email - invalid auth token 401",
+			"id": "fe1ad2a9-6369-44b8-9da8-623cf3de7728",
+			"url": "http://localhost:3000/v5/members/denis/verify?token=abc123123",
+			"time": "2020-02-18T16:08:46.366Z",
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized",
+				"detail": {
+					"name": "Unauthorized",
+					"detail": "Similar to 403 Forbidden, but specifically for use when authentication is possible but has failed or not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 401": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "verify email - expired auth token 401",
+			"id": "48049fb7-a1fb-4e30-b183-39b4f212e84c",
+			"url": "http://localhost:3000/v5/members/denis/verify?token=abc123123",
+			"time": "2020-02-18T16:08:46.366Z",
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized",
+				"detail": {
+					"name": "Unauthorized",
+					"detail": "Similar to 403 Forbidden, but specifically for use when authentication is possible but has failed or not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 401": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "verify email - missing verify token 400",
+			"id": "7c698d6b-e2ea-43e2-8a14-14f42dab2d7e",
+			"url": "http://localhost:3000/v5/members/denis/verify",
+			"time": "2020-02-18T16:08:46.366Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "verify email - not found 404",
+			"id": "7e4da3a5-72dc-49c7-9aa6-60581c32e0a4",
+			"url": "http://localhost:3000/v5/members/other/verify?token=abc123123",
+			"time": "2020-02-18T16:08:46.366Z",
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "update member 1",
+			"id": "4bf6360d-0ea3-4d98-a2c0-8812c0a2f04f",
+			"url": "http://localhost:3000/v5/members/testing",
+			"time": "2020-02-18T16:08:46.366Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "update member 2",
+			"id": "b55c348f-8e71-4051-8dab-024f7c6bdf15",
+			"url": "http://localhost:3000/v5/members/testing?verifyUrl=http://test.com/abc",
+			"time": "2020-02-18T16:08:46.366Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "update member - unexpected field 400",
+			"id": "0e5b244c-eda2-4662-9c83-06cb0b691e58",
+			"url": "http://localhost:3000/v5/members/testing?verifyUrl=http://test.com/abc",
+			"time": "2020-02-18T16:08:46.366Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "update member - invalid email 400",
+			"id": "eb6605d6-631a-4ae7-8cb7-48dce670c5cd",
+			"url": "http://localhost:3000/v5/members/testing?verifyUrl=http://test.com/abc",
+			"time": "2020-02-18T16:08:46.366Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "update member - invalid verifyUrl 400",
+			"id": "2521cd83-6791-49b2-8be2-c6cf88f86ae5",
+			"url": "http://localhost:3000/v5/members/testing?verifyUrl=abc",
+			"time": "2020-02-18T16:08:46.366Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "update member - not found 404",
+			"id": "647ca222-14b1-41b2-b00d-475c91e83e75",
+			"url": "http://localhost:3000/v5/members/other?verifyUrl=http://test.com/abc",
+			"time": "2020-02-18T16:08:46.366Z",
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found",
+				"detail": {
+					"name": "Not Found",
+					"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "update member - forbidden 403",
+			"id": "cf21930a-e00e-4019-a393-703a9252187f",
+			"url": "http://localhost:3000/v5/members/testing",
+			"time": "2020-02-18T16:08:46.366Z",
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "upload photo",
+			"id": "13712e75-6c17-419f-9148-8a73e50badac",
+			"url": "http://localhost:3000/v5/members/testing/photo",
+			"time": "2020-02-18T16:08:46.366Z",
+			"testPassFailCounts": {}
+		}
+	],
+	"synced": false
+}
