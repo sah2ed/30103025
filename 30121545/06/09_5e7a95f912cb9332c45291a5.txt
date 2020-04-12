@@ -1,0 +1,10 @@
+Ingredients: cheese, cultured, egg, preservatives, salt, sugar
+
+Nutrition Facts:
+Calories: 170.0
+Carbohydrate: 209.0
+Cholesterol: 10.0mg
+Protein: 
+Sodium: 1409.0
+Sugars: 21.0
+Trans fat: 
