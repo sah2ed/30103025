@@ -1,0 +1,57 @@
+Failures:
+1) Topcoder Header Tests:  With Login tests should verify that clicking inside the user info section directs user to profile page
+  Message:
+ESC[31m    Failed: Cannot read property 'click' of undefinedESC[0m
+  Stack:
+    TypeError: Cannot read property 'click' of undefined
+        at ChallengeListingPage.<anonymous> (/opt/subs/02-submission-372033/community-app/community-app-tests/page-objects/pages/topcoder/challenge-listings/challenge-listing.po.ts:190:20)
+:
+        at step (/opt/subs/02-submission-372033/community-app/community-app-tests/temp/page-objects/pages/topcoder/challenge-listings/challenge-listing.po.js:33:23)
+        at Object.next (/opt/subs/02-submission-372033/community-app/community-app-tests/temp/page-objects/pages/topcoder/challenge-listings/challenge-listing.po.js:14:53)
+        at fulfilled (/opt/subs/02-submission-372033/community-app/community-app-tests/temp/page-objects/pages/topcoder/challenge-listings/challenge-listing.po.js:5:58)
+        at runMicrotasks (<anonymous>)
+        at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    From: Task: Run it("should verify that clicking inside the user info section directs user to profile page") in control flow
+        at UserContext.<anonymous> (/opt/subs/02-submission-372033/community-app/community-app-tests/node_modules/jasminewd2/index.js:94:19)
+        at /opt/subs/02-submission-372033/community-app/community-app-tests/node_modules/jasminewd2/index.js:64:48
+        at ControlFlow.emit (/opt/subs/02-submission-372033/community-app/community-app-tests/node_modules/selenium-webdriver/lib/events.js:62:21)
+        at ControlFlow.shutdown_ (/opt/subs/02-submission-372033/community-app/community-app-tests/node_modules/selenium-webdriver/lib/promise.js:2674:10)
+        at /opt/subs/02-submission-372033/community-app/community-app-tests/node_modules/selenium-webdriver/lib/promise.js:2599:53
+    From asynchronous test: 
+    Error
+        at Suite.<anonymous> (/opt/subs/02-submission-372033/community-app/community-app-tests/test-suites/tc-header.spec.ts:174:5)
+        at Suite.<anonymous> (/opt/subs/02-submission-372033/community-app/community-app-tests/test-suites/tc-header.spec.ts:89:3)
+        at Object.<anonymous> (/opt/subs/02-submission-372033/community-app/community-app-tests/test-suites/tc-header.spec.ts:7:1)
+
+2) Topcoder Footer Tests:  With Login tests should verify that the links under Compete are working from the Footer
+  Message:
+    Expected 'https://qa-community-app.topcoder-dev.com/challenges' to contain 'https://accounts.topcoder.com/', 'Provided Url https://accounts.topcoder.com/ is not present in page URL https://qa-community-app.topcoder-dev.com/challenges'.
+  Stack:
+    Error: Failed expectation
+        at Object.<anonymous> (/opt/subs/02-submission-372033/community-app/community-app-tests/page-objects/pages/topcoder/common-page/common.helper.ts:60:24)
+        at step (/opt/subs/02-submission-372033/community-app/community-app-tests/temp/page-objects/pages/topcoder/common-page/common.helper.js:33:23)
+        at Object.next (/opt/subs/02-submission-372033/community-app/community-app-tests/temp/page-objects/pages/topcoder/common-page/common.helper.js:14:53)
+        at fulfilled (/opt/subs/02-submission-372033/community-app/community-app-tests/temp/page-objects/pages/topcoder/common-page/common.helper.js:5:58)
+        at runMicrotasks (<anonymous>)
+        at processTicksAndRejections (internal/process/task_queues.js:97:5)
+
+3) Topcoder Footer Tests:  With Login tests should verify that the links under Community are working from the Footer
+  Message:
+    Expected 'https://www.topcoder-dev.com/community/statistics' to equal 'https://qa-community-app.topcoder-dev.com/challenges'.
+  Stack:
+    Error: Failed expectation
+        at Object.<anonymous> (/opt/subs/02-submission-372033/community-app/community-app-tests/page-objects/pages/topcoder/common-page/common.helper.ts:47:17)
+        at step (/opt/subs/02-submission-372033/community-app/community-app-tests/temp/page-objects/pages/topcoder/common-page/common.helper.js:33:23)
+        at Object.next (/opt/subs/02-submission-372033/community-app/community-app-tests/temp/page-objects/pages/topcoder/common-page/common.helper.js:14:53)
+        at fulfilled (/opt/subs/02-submission-372033/community-app/community-app-tests/temp/page-objects/pages/topcoder/common-page/common.helper.js:5:58)
+        at runMicrotasks (<anonymous>)
+        at processTicksAndRejections (internal/process/task_queues.js:97:5)
+
+53 specs, 3 failures
+Finished in 1262.594 seconds
+
+[12:09:41] I/launcher - 0 instance(s) of WebDriver still running
+[12:09:41] I/launcher - chrome #01 failed 3 test(s)
+[12:09:41] I/launcher - overall: 3 failed spec(s)
+[12:09:41] E/launcher - Process exited with error code 1
+
