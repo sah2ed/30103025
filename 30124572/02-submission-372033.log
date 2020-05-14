@@ -1,7 +1,7 @@
 Failures:
 1) Topcoder Header Tests:  With Login tests should verify that clicking inside the user info section directs user to profile page
   Message:
-ESC[31m    Failed: Cannot read property 'click' of undefinedESC[0m
+    Failed: Cannot read property 'click' of undefined
   Stack:
     TypeError: Cannot read property 'click' of undefined
         at ChallengeListingPage.<anonymous> (/opt/subs/02-submission-372033/community-app/community-app-tests/page-objects/pages/topcoder/challenge-listings/challenge-listing.po.ts:190:20)
