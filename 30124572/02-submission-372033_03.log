@@ -1,0 +1,87 @@
+Failures:
+1) Topcoder Header Tests:  With Login tests should verify that clicking inside the user info section directs user to profile page
+  Message:
+    Failed: Cannot read property 'click' of undefined
+  Stack:
+    TypeError: Cannot read property 'click' of undefined
+        at ChallengeListingPage.<anonymous> (/opt/subs/02-submission-372033/community-app/community-app-tests/page-objects/pages/topcoder/challenge-listings/challenge-listing.po.ts:190:20)
+        at step (/opt/subs/02-submission-372033/community-app/community-app-tests/temp/page-objects/pages/topcoder/challenge-listings/challenge-listing.po.js:33:23)
+        at Object.next (/opt/subs/02-submission-372033/community-app/community-app-tests/temp/page-objects/pages/topcoder/challenge-listings/challenge-listing.po.js:14:53)
+        at fulfilled (/opt/subs/02-submission-372033/community-app/community-app-tests/temp/page-objects/pages/topcoder/challenge-listings/challenge-listing.po.js:5:58)
+        at runMicrotasks (<anonymous>)
+        at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    From: Task: Run it("should verify that clicking inside the user info section directs user to profile page") in control flow
+        at UserContext.<anonymous> (/opt/subs/02-submission-372033/community-app/community-app-tests/node_modules/jasminewd2/index.js:94:19)
+        at /opt/subs/02-submission-372033/community-app/community-app-tests/node_modules/jasminewd2/index.js:64:48
+        at ControlFlow.emit (/opt/subs/02-submission-372033/community-app/community-app-tests/node_modules/selenium-webdriver/lib/events.js:62:21)
+        at ControlFlow.shutdown_ (/opt/subs/02-submission-372033/community-app/community-app-tests/node_modules/selenium-webdriver/lib/promise.js:2674:10)
+        at /opt/subs/02-submission-372033/community-app/community-app-tests/node_modules/selenium-webdriver/lib/promise.js:2599:53
+    From asynchronous test: 
+    Error
+        at Suite.<anonymous> (/opt/subs/02-submission-372033/community-app/community-app-tests/test-suites/tc-header.spec.ts:174:5)
+        at Suite.<anonymous> (/opt/subs/02-submission-372033/community-app/community-app-tests/test-suites/tc-header.spec.ts:89:3)
+        at Object.<anonymous> (/opt/subs/02-submission-372033/community-app/community-app-tests/test-suites/tc-header.spec.ts:7:1)
+
+2) Topcoder Footer Tests:  Without Login tests should verify that the links under Community are working from the Footer
+  Message:
+    Expected 'https://www.topcoder-dev.com/community/member-programs' to equal 'https://qa-community-app.topcoder-dev.com/challenges'.
+  Stack:
+    Error: Failed expectation
+        at Object.<anonymous> (/opt/subs/02-submission-372033/community-app/community-app-tests/page-objects/pages/topcoder/common-page/common.helper.ts:47:17)
+        at step (/opt/subs/02-submission-372033/community-app/community-app-tests/temp/page-objects/pages/topcoder/common-page/common.helper.js:33:23)
+        at Object.next (/opt/subs/02-submission-372033/community-app/community-app-tests/temp/page-objects/pages/topcoder/common-page/common.helper.js:14:53)
+        at fulfilled (/opt/subs/02-submission-372033/community-app/community-app-tests/temp/page-objects/pages/topcoder/common-page/common.helper.js:5:58)
+        at runMicrotasks (<anonymous>)
+        at processTicksAndRejections (internal/process/task_queues.js:97:5)
+
+3) Topcoder Footer Tests:  Without Login tests should verify Footer social icons functionality
+  Message:
+    Failed: invalid argument: 'name' must be a string
+      (Session info: headless chrome=81.0.4044.138)
+      (Driver info: chromedriver=81.0.4044.69 (6813546031a4bc83f717a2ef7cd4ac6ec1199132-refs/branch-heads/4044@{#776}),platform=Linux 4.4.0-1102-aws x86_64)
+  Stack:
+    WebDriverError: invalid argument: 'name' must be a string
+      (Session info: headless chrome=81.0.4044.138)
+      (Driver info: chromedriver=81.0.4044.69 (6813546031a4bc83f717a2ef7cd4ac6ec1199132-refs/branch-heads/4044@{#776}),platform=Linux 4.4.0-1102-aws x86_64)
+        at Object.checkLegacyResponse (/opt/subs/02-submission-372033/community-app/community-app-tests/node_modules/selenium-webdriver/lib/error.js:546:15)
+                at parseHttpResponse (/opt/subs/02-submission-372033/community-app/community-app-tests/node_modules/selenium-webdriver/lib/http.js:509:13)
+        at /opt/subs/02-submission-372033/community-app/community-app-tests/node_modules/selenium-webdriver/lib/http.js:441:30
+        at runMicrotasks (<anonymous>)
+        at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    From: Task: WebDriver.switchTo().window(undefined)
+        at Driver.schedule (/opt/subs/02-submission-372033/community-app/community-app-tests/node_modules/selenium-webdriver/lib/webdriver.js:807:17)
+        at TargetLocator.window (/opt/subs/02-submission-372033/community-app/community-app-tests/node_modules/selenium-webdriver/lib/webdriver.js:1844:25)
+        at Object.<anonymous> (/opt/subs/02-submission-372033/topcoder-testing-lib/src/utils/browser-helper.ts:103:30)
+        at step (/opt/subs/02-submission-372033/topcoder-testing-lib/dist/src/utils/browser-helper.js:32:23)
+        at Object.next (/opt/subs/02-submission-372033/topcoder-testing-lib/dist/src/utils/browser-helper.js:13:53)
+        at /opt/subs/02-submission-372033/topcoder-testing-lib/dist/src/utils/browser-helper.js:7:71
+        at new Promise (<anonymous>)
+        at __awaiter (/opt/subs/02-submission-372033/topcoder-testing-lib/dist/src/utils/browser-helper.js:3:12)
+        at Object.switchToWindow (/opt/subs/02-submission-372033/topcoder-testing-lib/dist/src/utils/browser-helper.js:204:16)
+        at Function.<anonymous> (/opt/subs/02-submission-372033/community-app/community-app-tests/page-objects/pages/topcoder/challenge-listings/challenge-listing.helper.ts:156:27)
+    From: Task: Run it("should verify Footer social icons functionality") in control flow
+        at UserContext.<anonymous> (/opt/subs/02-submission-372033/community-app/community-app-tests/node_modules/jasminewd2/index.js:94:19)
+        at /opt/subs/02-submission-372033/community-app/community-app-tests/node_modules/jasminewd2/index.js:64:48
+        at ControlFlow.emit (/opt/subs/02-submission-372033/community-app/community-app-tests/node_modules/selenium-webdriver/lib/events.js:62:21)
+        at ControlFlow.shutdown_ (/opt/subs/02-submission-372033/community-app/community-app-tests/node_modules/selenium-webdriver/lib/promise.js:2674:10)
+        at /opt/subs/02-submission-372033/community-app/community-app-tests/node_modules/selenium-webdriver/lib/promise.js:2599:53
+    From asynchronous test: 
+    Error
+        at Suite.<anonymous> (/opt/subs/02-submission-372033/community-app/community-app-tests/test-suites/tc-footer.spec.ts:64:5)
+        at Suite.<anonymous> (/opt/subs/02-submission-372033/community-app/community-app-tests/test-suites/tc-footer.spec.ts:15:3)
+        at Object.<anonymous> (/opt/subs/02-submission-372033/community-app/community-app-tests/test-suites/tc-footer.spec.ts:6:1)
+
+4) Topcoder Footer Tests:  With Login tests should verify that the links under Help Center are working from the Footer
+  Message:
+    Expected 'https://www.topcoder-dev.com/thrive/tracks?track=Topcoder&tax=Getting%20Paid' to equal 'https://qa-community-app.topcoder-dev.com/challenges'.
+  Stack:
+    Error: Failed expectation
+        at Object.<anonymous> (/opt/subs/02-submission-372033/community-app/community-app-tests/page-objects/pages/topcoder/common-page/common.helper.ts:47:17)
+        at step (/opt/subs/02-submission-372033/community-app/community-app-tests/temp/page-objects/pages/topcoder/common-page/common.helper.js:33:23)
+        at Object.next (/opt/subs/02-submission-372033/community-app/community-app-tests/temp/page-objects/pages/topcoder/common-page/common.helper.js:14:53)
+        at fulfilled (/opt/subs/02-submission-372033/community-app/community-app-tests/temp/page-objects/pages/topcoder/common-page/common.helper.js:5:58)
+        at runMicrotasks (<anonymous>)
+        at processTicksAndRejections (internal/process/task_queues.js:97:5)
+
+53 specs, 4 failures
+Finished in 1243.659 seconds
